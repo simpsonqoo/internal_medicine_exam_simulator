@@ -1257,7 +1257,7 @@
         <strong>選擇科目</strong><br>
         <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="internalmed-all" onchange="handleSelectAll('internalmed-subject')">全選</div>
         <div class="subject-count" id="count-internalmed-all-subjects" style="display:none;">
-          總題數：<input type="number" value="160" min="1" max="500">
+          總題數：<input type="number" value="80" min="1" max="500">
         </div>
         <br>
         <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="心臟科" onchange="toggleSubjectCount(this, 'internalmed')">心臟科<div class="subject-count" id="count-internalmed-心臟科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
@@ -1512,12 +1512,12 @@
       const isAllSelected = allCheckbox ? allCheckbox.checked : false;
       const subjects = Array.from(checkedSubjects).map(cb => cb.value);
       
-      let totalCount = 160;
+      let totalCount = 80;
       let subjectCounts = [];
       
       if (isAllSelected) {
         const totalCountInput = document.querySelector('#count-internalmed-all-subjects input');
-        totalCount = parseInt(totalCountInput.value) || 160;
+        totalCount = parseInt(totalCountInput.value) || 80;
       } else {
         subjectCounts = subjects.map(subject => {
           const countInput = document.querySelector(`#count-internalmed-${subject} input`);
@@ -1753,9 +1753,7 @@
       let recordedCount = 0;
       quiz.forEach(q => {
         if (!q.userAnswer) return;
-        const optionCount = Object.keys(q.options).length;
-        const isBonusQuestion = optionCount === 5;
-        const result = isBonusQuestion ? 1 : (isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0);
+        const result = isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0;
         if (!userProgress[q.id]) userProgress[q.id] = [];
         userProgress[q.id].push(result);
         recordedCount++;
@@ -1778,8 +1776,7 @@
       
       quiz.forEach(q => {
         if (q.userAnswer) {
-          const optionCount = Object.keys(q.options).length;
-          const result = optionCount === 5 ? 1 : (isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0);
+          const result = isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0;
           currentTestProgress[q.id] = [result];
           currentTestCount++;
         }
@@ -1853,15 +1850,10 @@
       if (isAnswered) {
         const explanation = document.getElementById(`explanation${i}`);
         explanation.dataset.answered = "true";
-        const optionCount = Object.keys(q.options).length;
-        const isBonusQuestion = optionCount === 5;
         explanation.classList.remove('correct', 'incorrect');
         
         let explanationText = '';
-        if (isBonusQuestion && q.userAnswer) {
-          explanation.classList.add('correct');
-          explanationText = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${q.userAnswer}. ${q.options[q.userAnswer]}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
-        } else if (q.userAnswer && isAnswerCorrect(q.userAnswer, q.answer)) {
+        if (q.userAnswer && isAnswerCorrect(q.userAnswer, q.answer)) {
           explanation.classList.add('correct');
           explanationText = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
         } else {
@@ -1897,16 +1889,8 @@
         explanation.dataset.answered = "true";
         quiz[i].userAnswer = chosen ? chosen.value : null;
         
-        const optionCount = Object.keys(quiz[i].options).length;
-        const isBonusQuestion = optionCount === 5;
-        
         let explanationText = '';
-        if (isBonusQuestion && chosen) {
-          explanation.classList.add('correct');
-          correct++;
-          quiz[i].isCorrect = true;
-          explanationText = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(quiz[i].tags)}<br>你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}<br>正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}<br>詳解：${quiz[i].explanation}`;
-        } else if (chosen && isAnswerCorrect(chosen.value, quiz[i].answer)) {
+        if (chosen && isAnswerCorrect(chosen.value, quiz[i].answer)) {
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
@@ -2003,13 +1987,11 @@
       let detailedResults = '';
       
       quiz.forEach((q, idx) => {
-        const optionCount = Object.keys(q.options).length;
-        const isBonusQuestion = optionCount === 5;
         let questionResult = `第 ${idx + 1} 題：${q.question}\n`;
         if (q.images && q.images.length > 0) questionResult += `${generateImageHTML(q.images)}\n`;
         questionResult += `標籤：${formatTags(q.tags)}\n選項：\n`;
         Object.entries(q.options).forEach(([key, value]) => { questionResult += `  ${key}. ${value}\n`; });
-        questionResult += `正確答案：${formatCorrectAnswer(q.answer, q.options)}${isBonusQuestion ? ' （送分題）' : ''}\n詳解：${q.explanation}\n${'-'.repeat(30)}\n\n`;
+        questionResult += `正確答案：${formatCorrectAnswer(q.answer, q.options)}\n詳解：${q.explanation}\n${'-'.repeat(30)}\n\n`;
         detailedResults += `<div class="question-result browse-mode" data-question-index="${idx}">${questionResult}</div>`;
       });
       
@@ -2062,13 +2044,11 @@
       let detailedResults = '';
       
       quiz.forEach((q, idx) => {
-        const optionCount = Object.keys(q.options).length;
-        const isBonusQuestion = optionCount === 5;
-        let isCorrect = isBonusQuestion && q.userAnswer ? true : isAnswerCorrect(q.userAnswer, q.answer);
+        const isCorrect = isAnswerCorrect(q.userAnswer, q.answer);
         
         if (!isCorrect) wrongQuestionIndices.push(idx);
         
-        const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
+        const resultText = isCorrect ? '✓ 正確' : '✗ 錯誤';
         const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
         
         let questionResult = `第 ${idx + 1} 題：${q.question}\n`;
@@ -2226,15 +2206,7 @@
         explanation.style.display = 'block';
         q.userAnswer = chosen ? chosen.value : null;
         
-        const optionCount = Object.keys(q.options).length;
-        const isBonusQuestion = optionCount === 5;
-        
-        if (isBonusQuestion && chosen) {
-          explanation.classList.add('correct');
-          explanation.innerHTML = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen.value}. ${q.options[chosen.value]}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
-          correct++;
-          q.isCorrect = true;
-        } else if (chosen && isAnswerCorrect(chosen.value, q.answer)) {
+        if (chosen && isAnswerCorrect(chosen.value, q.answer)) {
           explanation.classList.add('correct');
           explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
           correct++;
