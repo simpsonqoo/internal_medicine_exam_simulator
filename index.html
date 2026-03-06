@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>內科專科醫師甄審測驗系統 created and maintained by KMU BM112 陳君豪</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .header-container h1 {
+      margin: 0;
+      flex-grow: 1;
+    }
+    
+    .author-info {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+      white-space: nowrap;
+    }
+    
+    .question-block {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .question-block h3 {
+      margin-top: 0;
+    }
+    .result {
+      margin-top: 30px;
+      font-weight: bold;
+      white-space: pre-wrap;
+    }
+    .explanation {
+      margin-top: 10px;
+      display: none;
+      color: #333;
+    }
+    .correct {
+      color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    .explanation.correct,
+    .explanation.incorrect {
+      color: #333 !important;
+    }
+    .result-correct {
+      color: green;
+      font-weight: bold;
+    }
+    .result-incorrect {
+      color: red;
+      font-weight: bold;
+    }
+    .checkbox-group {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+    .checkbox-group label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      margin-right: 8px;
+      transform: scale(1.2);
+    }
+    
+    input[type="radio"] {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      margin-right: 8px;
+      transform: scale(1.2);
+    }
+    
+    .tag-selector {
+      margin-bottom: 20px;
+    }
+    #nextBtn, #earlySubmitBtn {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .submit-answer-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .submit-answer-btn:hover {
+      background-color: #0056b3;
+    }
+    #nextBtn {
+      background-color: #28a745;
+      color: white;
+      border: 1px solid #28a745;
+    }
+    #nextBtn:hover {
+      background-color: #218838;
+    }
+    
+    #prevBtn {
+      background-color: #6c757d;
+      color: white;
+      border: 1px solid #6c757d;
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+    #prevBtn:hover {
+      background-color: #545b62;
+    }
+    
+    select[multiple] {
+      height: 8em;
+      width: 200px;
+    }
+    .subject-count {
+      margin-left: 20px;
+      margin-top: 5px;
+      display: none;
+    }
+    .subject-count input {
+      width: 50px;
+      margin-left: 5px;
+    }
+    .question-tags {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 2px 8px;
+      margin: 0 2px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+    .tag.year {
+      background-color: #28a745;
+    }
+    .tag.subject {
+      background-color: #dc3545;
+    }
+    .progress-info {
+      background: #e9ecef;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .hotkey-info {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+      font-weight: normal;
+    }
+    
+    .step-mode-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .step-mode-content {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .step-mode .question-block {
+      margin-bottom: 0;
+    }
+    .step-mode .progress-info {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .step-mode-controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .step-mode-controls button {
+      margin: 0 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+    #earlySubmitBtn {
+      background-color: #ffc107;
+      color: #212529;
+      border: 1px solid #ffc107;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #earlySubmitBtn:hover {
+      background-color: #e0a800;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .warning-message {
+      background-color: #fff3cd;
+      border: 1px solid #ffeaa7;
+      color: #856404;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      display: none;
+    }
+
+/* 選擇區域布局 */
+.selection-container {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+/* 單一內科區塊樣式 */
+.medicine-block {
+  width: 500px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.medicine-block h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+}
+
+.medicine-block-content {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.year-section {
+  display: flex;
+  gap: 20px;
+}
+
+.subject-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.selection-container .checkbox-group {
+  margin: 0;
+  width: auto;
+  min-width: 180px;
+}
+
+.medicine-block-content .checkbox-group {
+  flex: 1;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* 產生題目按鈕樣式 */
+.generate-button {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+  align-self: flex-start;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.generate-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.generate-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .selection-container {
+    flex-direction: column;
+  }
+  
+  .medicine-block {
+    width: 100%;
+  }
+  
+  .checkbox-group {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  
+  .generate-button {
+    margin-left: 0;
+    margin-top: 20px;
+    align-self: center;
+    width: 200px;
+  }
+}
+
+/* 自定義確認對話框樣式 */
+.custom-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-confirm-message {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.custom-confirm-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.custom-confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 80px;
+}
+
+.custom-confirm-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.custom-confirm-ok {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.custom-confirm-cancel:hover {
+  background-color: #545b62;
+}
+
+.custom-confirm-ok:hover {
+  background-color: #e0a800;
+}
+
+    /* 視覺化選擇按鈕樣式 */
+    .visual-checkbox {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 4px;
+      background-color: transparent;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: #007bff;
+      min-height: 20px;
+      box-sizing: border-box;
+    }
+
+    .visual-checkbox:hover {
+      border-color: #0056b3;
+      color: #0056b3;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0,123,255,0.2);
+    }
+
+    .visual-checkbox.selected {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: white;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .visual-checkbox.selected:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+      color: white;
+    }
+
+    .visual-checkbox input[type="checkbox"] {
+      display: none;
+    }
+
+    .visual-checkbox .subject-count {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      font-size: 12px;
+    }
+
+    .visual-checkbox.selected .subject-count {
+      color: white;
+      border-top-color: rgba(255,255,255,0.5);
+    }
+
+    .visual-checkbox .subject-count input {
+      background-color: rgba(255,255,255,0.9);
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin-left: 5px;
+      color: #333;
+      width: 50px;
+    }
+
+    .visual-checkbox.selected .subject-count input {
+      background-color: white;
+      border-color: #dee2e6;
+    }
+  
+    /* 圖片容器樣式 */
+    .question-images {
+      margin: 15px 0;
+      text-align: left;
+    }
+    
+    .question-images img {
+      max-width: 300px;
+      max-height: 250px;
+      margin: 5px 10px 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .question-images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .image-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      cursor: pointer;
+    }
+    
+    .image-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 5px;
+      box-shadow: 0 4px 20px rgba(255,255,255,0.3);
+    }
+    
+    @media (max-width: 768px) {
+      .question-images img {
+        max-width: 250px;
+        max-height: 200px;
+      }
+    }
+
+    /* 錯題切換按鈕樣式 */
+    .wrong-answers-toggle {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .wrong-answers-toggle:hover {
+      background-color: #c82333;
+    }
+
+    .wrong-answers-toggle.show-all {
+      background-color: #28a745;
+    }
+
+    .wrong-answers-toggle.show-all:hover {
+      background-color: #218838;
+    }
+
+    .question-result.hidden {
+      display: none !important;
+    }
+
+    /* 答題記錄管理樣式 */
+    .record-management {
+      display: flex;
+      gap: 15px;
+      margin: 15px 0;
+      padding: 15px;
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+    }
+    
+    .record-section {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    .record-section h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #495057;
+    }
+    
+    .file-input-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+    
+    .file-input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    
+    .file-input-btn {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background-color 0.3s ease;
+      min-width: 100px;
+    }
+    
+    .file-input-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    .download-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .current-record-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .current-record-btn:hover {
+      background-color: #218838;
+    }
+    
+    .history-record-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .history-record-btn:not(:disabled) {
+      background-color: #007bff;
+    }
+    
+    .history-record-btn:not(:disabled):hover {
+      background-color: #0056b3;
+    }
+    
+    .history-record-btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    
+    .record-status {
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 3px;
+      margin-top: 5px;
+    }
+    
+    .record-status.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .record-status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .record-status.info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    
+    @media (max-width: 480px) {
+      .record-management {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+      
+      .download-buttons {
+        flex-direction: row;
+        gap: 8px;
+      }
+      
+      .current-record-btn, .history-record-btn {
+        flex: 1;
+        min-width: 80px;
+        font-size: 12px;
+        padding: 6px 8px;
+      }
+    }
+  
+    /* 視覺化功能樣式 */
+    .visualization-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .visualization-btn:hover {
+      background-color: #138496;
+      transform: translateY(-1px);
+    }
+    
+    .visualization-btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    .visualization-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .visualization-content {
+      background: white;
+      border-radius: 12px;
+      width: 98%;
+      max-width: 1800px;
+      height: 90%;
+      max-height: 800px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .visualization-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .visualization-header h2 {
+      margin: 0;
+      font-size: 1.8em;
+      font-weight: 300;
+    }
+
+    .close-visualization {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .close-visualization:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .visualization-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      background-color: #f5f7fa;
+    }
+
+    .exam-section {
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .exam-header {
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+    }
+
+    .year-column {
+      border-right: 1px solid #e1e8ed;
+      min-height: 300px;
+    }
+
+    .year-column:last-child {
+      border-right: none;
+    }
+
+    .year-header {
+      background-color: #f8f9fa;
+      padding: 12px 15px;
+      text-align: center;
+      font-weight: 600;
+      color: #495057;
+      border-bottom: 2px solid #e1e8ed;
+      font-size: 0.95em;
+    }
+
+    .questions-container {
+      padding: 10px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .question-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px;
+      margin-bottom: 2px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      font-size: 0.85em;
+    }
+
+    .question-row:hover {
+      background-color: #f8f9fa;
+    }
+
+    .question-number {
+      font-weight: 500;
+      color: #495057;
+      min-width: 50px;
+      font-size: 0.8em;
+    }
+
+    .answer-history {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+
+    .answer-symbol {
+      font-size: 1em;
+      line-height: 1;
+    }
+
+    .correct-symbol {
+      color: #28a745;
+    }
+
+    .incorrect-symbol {
+      color: #dc3545;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: #6c757d;
+      font-style: italic;
+      padding: 50px 20px;
+    }
+
+    @media (max-width: 1400px) {
+      .year-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    @media (max-width: 1100px) {
+      .year-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .year-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .visualization-content {
+        width: 98%;
+        height: 95%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .year-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .visualization-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+      
+      .questions-container {
+        max-height: 350px;
+      }
+    }
+
+    /* 視覺化 Tab 列樣式（保留原版不動） */
+    .visualization-tab-bar {
+      display: flex;
+      background-color: #f0f2f5;
+      border-bottom: 2px solid #dee2e6;
+      padding: 10px 20px 0 20px;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .vis-tab-btn {
+      padding: 10px 28px;
+      font-size: 15px;
+      font-weight: bold;
+      border: 2px solid #007bff;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      background-color: #fff;
+      color: #007bff;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-bottom: -2px;
+      position: relative;
+    }
+
+    .vis-tab-btn:hover {
+      background-color: #e7f3ff;
+    }
+
+    .vis-tab-btn.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+      z-index: 1;
+    }
+
+    .vis-exam-section {
+      display: none;
+    }
+
+    .vis-exam-section.active {
+      display: block;
+    }
+
+    .questions-container::-webkit-scrollbar,
+    .visualization-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .questions-container::-webkit-scrollbar-track,
+    .visualization-body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 3px;
+    }
+
+    .questions-container::-webkit-scrollbar-thumb,
+    .visualization-body::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    .questions-container::-webkit-scrollbar-thumb:hover,
+    .visualization-body::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+
+    /* 瀏覽模式樣式 */
+    .question-result.browse-mode {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .question-result.browse-mode:nth-child(even) {
+      background: #ffffff;
+    }
+
+    /* 首頁記錄管理區域樣式 */
+    .homepage-record-section {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .homepage-record-section h3 {
+      margin: 0 0 15px 0;
+      color: #495057;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .homepage-record-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .homepage-file-input-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .homepage-file-input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    
+    .homepage-file-btn {
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 160px;
+      justify-content: center;
+    }
+    
+    .homepage-file-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+    }
+    
+    .homepage-visualization-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 160px;
+      justify-content: center;
+    }
+    
+    .homepage-visualization-btn:hover:not(:disabled) {
+      background-color: #138496;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(23,162,184,0.3);
+    }
+    
+    .homepage-visualization-btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.7;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .homepage-record-status {
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-top: 5px;
+      display: inline-block;
+    }
+    
+    .homepage-record-status.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .homepage-record-status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .homepage-record-status.info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    
+    .homepage-divider {
+      height: 2px;
+      background: linear-gradient(to right, #dee2e6, #6c757d, #dee2e6);
+      margin: 25px 0;
+      border: none;
+    }
+    
+    @media (max-width: 600px) {
+      .homepage-record-buttons {
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .homepage-file-btn,
+      .homepage-visualization-btn {
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+
+    .feedback-link {
+      display: inline-block;
+      text-align: center;
+      margin: 10px 0 5px 0;
+      font-size: 14px;
+    }
+    
+    .feedback-link a {
+      color: #007bff;
+      text-decoration: none;
+      padding: 2px 8px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    
+    .feedback-link a:hover {
+      background-color: #f8f9fa;
+      text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+  <div class="header-container" id="headerSection">
+    <h1>內科專科醫師甄審測驗系統</h1>
+    <p class="author-info">created and maintained by KMU BM112 陳君豪</p>
+  </div>
+
+<div class="tag-selector" id="setupSection">
+
+  <!-- 首頁記錄檔管理區域 -->
+  <div class="homepage-record-section" id="homepageRecordSection">
+    <h3>📊 答題記錄管理</h3>
+    <div class="homepage-record-buttons">
+      <div class="homepage-file-input-wrapper">
+        <input type="file" accept=".json" class="homepage-file-input" onchange="loadHomepageRecord(this.files[0])">
+        <button class="homepage-file-btn">
+          📂 載入記錄檔
+        </button>
+      </div>
+      <button id="homepageVisualizationBtn" class="homepage-visualization-btn" onclick="openHomepageVisualization()" disabled>
+        📊 視覺化分析
+      </button>
+    </div>
+    <div class="homepage-record-status info" id="homepageRecordStatus">尚未載入記錄檔案</div>
+  </div>
+  <div class="feedback-link">
+    💬 <a href="https://forms.gle/XdYNQoRgq9PBRm658" target="_blank">系統回饋與建議</a>
+  </div>
+
+  <hr class="homepage-divider">
+  <label>選擇模式：</label>
+    <select id="mode">
+      <option value="step">一題一題作答並顯示詳解</option>
+      <option value="all">全部作答後顯示詳解</option>
+      <option value="browse">瀏覽模式 - 直接查看題目與詳解</option>
+    </select>
+    <br><br>
+    <label>出題順序：</label>
+    <select id="questionOrder">
+      <option value="random">隨機順序</option>
+      <option value="sequential">照原始順序</option>
+    </select>
+    <br><br>
+
+    <label>選擇年份和科目：</label>
+    
+    <div class="selection-container">
+      <!-- 年份選擇 -->
+      <div class="checkbox-group">
+        <strong>選擇年份</strong><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="allYears" onchange="handleSelectAll('yearAll')">全選</div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114">114</div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113">113</div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="112">112</div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="111">111</div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="110">110</div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="109">109</div><br>
+      </div>
+      
+      <!-- 科目選擇 -->
+      <div class="checkbox-group" id="internalmed-subjects">
+        <strong>選擇科目</strong><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="internalmed-all" onchange="handleSelectAll('internalmed-subject')">全選</div>
+        <div class="subject-count" id="count-internalmed-all-subjects" style="display:none;">
+          總題數：<input type="number" value="160" min="1" max="500">
+        </div>
+        <br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="心臟科" onchange="toggleSubjectCount(this, 'internalmed')">心臟科<div class="subject-count" id="count-internalmed-心臟科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="胸腔科" onchange="toggleSubjectCount(this, 'internalmed')">胸腔科<div class="subject-count" id="count-internalmed-胸腔科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="消化科" onchange="toggleSubjectCount(this, 'internalmed')">消化科<div class="subject-count" id="count-internalmed-消化科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="腎臟科" onchange="toggleSubjectCount(this, 'internalmed')">腎臟科<div class="subject-count" id="count-internalmed-腎臟科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="感染科" onchange="toggleSubjectCount(this, 'internalmed')">感染科<div class="subject-count" id="count-internalmed-感染科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="內分泌及新陳代謝科" onchange="toggleSubjectCount(this, 'internalmed')">內分泌及新陳代謝科<div class="subject-count" id="count-internalmed-內分泌及新陳代謝科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="風濕科" onchange="toggleSubjectCount(this, 'internalmed')">風濕科<div class="subject-count" id="count-internalmed-風濕科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="免疫科" onchange="toggleSubjectCount(this, 'internalmed')">免疫科<div class="subject-count" id="count-internalmed-免疫科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="血液科" onchange="toggleSubjectCount(this, 'internalmed')">血液科<div class="subject-count" id="count-internalmed-血液科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="腫瘤科" onchange="toggleSubjectCount(this, 'internalmed')">腫瘤科<div class="subject-count" id="count-internalmed-腫瘤科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="神經科" onchange="toggleSubjectCount(this, 'internalmed')">神經科<div class="subject-count" id="count-internalmed-神經科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="精神科" onchange="toggleSubjectCount(this, 'internalmed')">精神科<div class="subject-count" id="count-internalmed-精神科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+        <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="皮膚科" onchange="toggleSubjectCount(this, 'internalmed')">皮膚科<div class="subject-count" id="count-internalmed-皮膚科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
+      </div>
+      
+      <!-- 產生題目按鈕 -->
+      <button class="generate-button" onclick="startQuiz()">產生題目</button>
+    </div>
+  </div>
+
+  <!-- 步驟模式的進度顯示 -->
+  <div class="progress-info hidden" id="progressInfo">
+    <strong>進度：第 <span id="currentQuestionNum">1</span> 題 / 共 <span id="totalQuestions">0</span> 題</strong>
+    <div class="hotkey-info">快捷鍵：A↑、B←、C↓、D→ 、提交答案/下一題：空白鍵</div>
+  </div>
+
+  <div id="quiz"></div>
+  
+  <button id="submitBtn" onclick="submitQuiz()" class="hidden">提交測驗</button>
+  
+  <div class="step-mode-controls hidden" id="stepControls">
+    <button id="prevBtn" onclick="prevQuestion()" style="display:none">回上題</button>
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none">下一題</button>
+    <button id="earlySubmitBtn" onclick="earlySubmit()" style="display:none">提早交卷</button>
+  </div>
+  
+  <div class="result" id="result"></div>
+
+  <script>
+    // ===== 答案比較與格式化函數 =====
+    function isAnswerCorrect(userAnswer, correctAnswer) {
+      if (!userAnswer) return false;
+      let correctAnswers = Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer];
+      return correctAnswers.includes(userAnswer);
+    }
+
+    function formatCorrectAnswer(answer, options) {
+      if (Array.isArray(answer)) {
+        return '\n' + answer.map(a => a + '. ' + options[a]).join('\n');
+      } else {
+        return '\n' + answer + '. ' + options[answer];
+      }
+    }
+
+    function formatUserAnswer(userAnswer, options) {
+      if (!userAnswer) return '\n未作答';
+      return '\n' + userAnswer + '. ' + options[userAnswer];
+    }
+
+    // ===== 視覺化 checkbox 切換 =====
+    function toggleVisualCheckbox(element) {
+      if (event.target.tagName === 'INPUT' && event.target.type === 'number') return;
+      
+      const checkbox = element.querySelector('input[type="checkbox"]');
+      checkbox.checked = !checkbox.checked;
+      updateSingleVisualStyle(element);
+      
+      if (checkbox.onchange) checkbox.onchange();
+      
+      const value = checkbox.value;
+      if (value === 'allYears' || value === 'internalmed-all') {
+        setTimeout(() => updateVisualStyles(), 10);
+      }
+    }
+
+    function updateSingleVisualStyle(element) {
+      const checkbox = element.querySelector('input[type="checkbox"]');
+      if (checkbox.checked) {
+        element.classList.add('selected');
+      } else {
+        element.classList.remove('selected');
+      }
+    }
+
+    function updateVisualStyles() {
+      document.querySelectorAll('.visual-checkbox').forEach(element => {
+        updateSingleVisualStyle(element);
+      });
+    }
+
+    // ===== 自定義確認對話框 =====
+    function customConfirm(message) {
+      return new Promise((resolve) => {
+        const overlay = document.createElement('div');
+        overlay.className = 'custom-confirm-overlay';
+        overlay.innerHTML = `
+          <div class="custom-confirm-box">
+            <div class="custom-confirm-message">${message}</div>
+            <div class="custom-confirm-buttons">
+              <button class="custom-confirm-btn custom-confirm-ok" onclick="handleConfirmResponse(true)">確定</button>
+              <button class="custom-confirm-btn custom-confirm-cancel" onclick="handleConfirmResponse(false)">取消</button>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(overlay);
+        window.confirmResolve = resolve;
+      });
+    }
+
+    function handleConfirmResponse(result) {
+      const overlay = document.querySelector('.custom-confirm-overlay');
+      if (overlay) overlay.remove();
+      if (window.confirmResolve) {
+        window.confirmResolve(result);
+        window.confirmResolve = null;
+      }
+    }
+
+    // ===== 題庫資料（範例題目，實際題目從JSON載入） =====
+    const questions = [];
+
+    let quiz = [];
+    let currentQuestion = 0;
+    let correct = 0;
+    let isStepMode = false;
+    let canUseSpacebar = false;
+    let hasWarned = false;
+    let showingWrongAnswersOnly = false;
+    let wrongQuestionIndices = [];
+
+    // 答題記錄相關
+    let userProgress = {
+      metadata: {
+        version: "1.0",
+        lastUpdated: null,
+        totalAttempted: 0
+      }
+    };
+    let hasLoadedProgress = false;
+    let loadedFileName = '';
+
+    // ===== 定義科目標籤（13科） =====
+    const subjectTags = [
+      "心臟科", "胸腔科", "消化科", "腎臟科", "感染科",
+      "內分泌及新陳代謝科", "風濕科", "免疫科", "血液科",
+      "腫瘤科", "神經科", "精神科", "皮膚科"
+    ];
+
+    // 年份標籤（用於tag顯示判斷）
+    const yearTagValues = ["114", "113", "112", "111", "110", "109"];
+
+    // ===== 鍵盤事件 =====
+    document.addEventListener('keydown', function(event) {
+      if (!isStepMode || !canUseSpacebar) return;
+      
+      if (event.code === 'Space' || event.key === ' ') {
+        event.preventDefault();
+        const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
+        const nextBtn = document.getElementById('nextBtn');
+        
+        if (submitBtn && submitBtn.style.display !== 'none') {
+          checkStep(currentQuestion);
+        } else if (nextBtn && nextBtn.style.display !== 'none') {
+          nextQuestion();
+        }
+      }
+      
+      if (event.code === 'Backspace' || event.key === 'Backspace') {
+        event.preventDefault();
+        const prevBtn = document.getElementById('prevBtn');
+        if (prevBtn && prevBtn.style.display !== 'none') prevQuestion();
+      }
+      
+      const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
+      if (submitBtn && submitBtn.style.display !== 'none') {
+        let optionToSelect = null;
+        switch(event.code) {
+          case 'ArrowUp': optionToSelect = 'A'; break;
+          case 'ArrowLeft': optionToSelect = 'B'; break;
+          case 'ArrowDown': optionToSelect = 'C'; break;
+          case 'ArrowRight': optionToSelect = 'D'; break;
+        }
+        if (optionToSelect) {
+          event.preventDefault();
+          const radio = document.querySelector(`input[name='q${currentQuestion}'][value='${optionToSelect}']`);
+          if (radio) radio.checked = true;
+        }
+      }
+    });
+
+    // ===== 取得選擇的年份 =====
+    function getSelectedYears() {
+      const checked = document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked');
+      return Array.from(checked)
+        .map(cb => cb.value)
+        .filter(v => yearTagValues.includes(v));
+    }
+
+    // ===== handleSelectAll =====
+    function handleSelectAll(type) {
+      if (type === 'yearAll') {
+        const allCheckbox = document.querySelector('input[value="allYears"]');
+        const yearCheckboxes = yearTagValues.map(y => document.querySelector(`input[value="${y}"]`)).filter(Boolean);
+        yearCheckboxes.forEach(cb => { cb.checked = allCheckbox.checked; });
+      } else if (type === 'internalmed-subject') {
+        const allCheckbox = document.querySelector('input[value="internalmed-all"]');
+        const subjectCheckboxes = document.querySelectorAll('#internalmed-subjects input[type="checkbox"]:not([value="internalmed-all"])');
+        const allSubjectsCount = document.getElementById('count-internalmed-all-subjects');
+        
+        if (allCheckbox.checked) {
+          subjectCheckboxes.forEach(cb => {
+            cb.checked = true;
+            const countDiv = document.getElementById(`count-internalmed-${cb.value}`);
+            if (countDiv) countDiv.style.display = 'none';
+          });
+          allSubjectsCount.style.display = 'block';
+        } else {
+          subjectCheckboxes.forEach(cb => {
+            cb.checked = false;
+            const countDiv = document.getElementById(`count-internalmed-${cb.value}`);
+            if (countDiv) countDiv.style.display = 'none';
+          });
+          allSubjectsCount.style.display = 'none';
+        }
+      }
+    }
+
+    // ===== toggleSubjectCount =====
+    function toggleSubjectCount(checkbox, medicineType) {
+      const subject = checkbox.value;
+      const countDiv = document.getElementById(`count-${medicineType}-${subject}`);
+      const allCheckbox = document.querySelector(`input[value="${medicineType}-all"]`);
+      const allSubjectsCount = document.getElementById(`count-${medicineType}-all-subjects`);
+      
+      if (checkbox.checked) {
+        if (!allCheckbox.checked) {
+          countDiv.style.display = 'block';
+        }
+      } else {
+        countDiv.style.display = 'none';
+        allCheckbox.checked = false;
+        allSubjectsCount.style.display = 'none';
+      }
+    }
+
+    // ===== 取得選擇的科目資訊 =====
+    function getSelectedSubjects() {
+      const allCheckbox = document.querySelector('input[value="internalmed-all"]');
+      const checkedSubjects = document.querySelectorAll('#internalmed-subjects input[type="checkbox"]:checked:not([value="internalmed-all"])');
+      const isAllSelected = allCheckbox ? allCheckbox.checked : false;
+      const subjects = Array.from(checkedSubjects).map(cb => cb.value);
+      
+      let totalCount = 160;
+      let subjectCounts = [];
+      
+      if (isAllSelected) {
+        const totalCountInput = document.querySelector('#count-internalmed-all-subjects input');
+        totalCount = parseInt(totalCountInput.value) || 160;
+      } else {
+        subjectCounts = subjects.map(subject => {
+          const countInput = document.querySelector(`#count-internalmed-${subject} input`);
+          return {
+            subject: subject,
+            count: parseInt(countInput.value) || 1
+          };
+        });
+      }
+      
+      return { subjects, isAllSelected, totalCount, subjectCounts };
+    }
+
+    // ===== formatTags =====
+    function formatTags(tags) {
+      if (!tags) return '';
+      return tags.map(tag => {
+        const isYear = yearTagValues.includes(tag);
+        const tagClass = isYear ? 'tag year' : 'tag subject';
+        return `<span class="${tagClass}">${tag}</span>`;
+      }).join(' ');
+    }
+
+    // ===== startQuiz =====
+    async function startQuiz() {
+      const homepageSection = document.getElementById('homepageRecordSection');
+      if (homepageSection) homepageSection.style.display = 'none';
+      
+      const selectedYears = getSelectedYears();
+      const subjectInfo = getSelectedSubjects();
+      
+      if (selectedYears.length === 0) {
+        alert('請至少選擇一個年份');
+        return;
+      }
+      
+      if (subjectInfo.subjects.length === 0) {
+        alert('請至少選擇一個科目');
+        return;
+      }
+
+      // 載入題目
+      let allLoadedQuestions = [];
+      
+      for (const year of selectedYears) {
+        const filename = `./exam/${year}.json`;
+        try {
+          const response = await fetch(filename);
+          if (!response.ok) {
+            console.error(`無法載入：${filename} (HTTP ${response.status})`);
+            continue;
+          }
+          const questionsData = await response.json();
+          // 為每題添加年份標籤
+          questionsData.forEach(q => {
+            if (!q.tags) q.tags = [];
+            if (!q.tags.includes(year)) q.tags.push(year);
+          });
+          allLoadedQuestions.push(...questionsData);
+        } catch (error) {
+          console.error(`載入 ${filename} 時發生錯誤：`, error);
+        }
+      }
+
+      if (allLoadedQuestions.length === 0) {
+        alert('無法載入題目，請確認題庫JSON檔案存在於 ./exam/ 資料夾中');
+        return;
+      }
+
+      // 篩選與選取題目
+      let finalQuiz = [];
+      
+      if (subjectInfo.isAllSelected) {
+        // 全選模式：依科目篩選後取指定總題數
+        const filteredQuestions = allLoadedQuestions.filter(q =>
+          subjectInfo.subjects.some(subject => q.subject === subject || (q.tags && q.tags.includes(subject)))
+        );
+        
+        if (filteredQuestions.length === 0) {
+          alert('沒有符合條件的題目，請重新選擇');
+          return;
+        }
+        
+        if (filteredQuestions.length < subjectInfo.totalCount) {
+          const confirmUseAll = await customConfirm(`題庫數量不足！<br><br>要求題數：${subjectInfo.totalCount} 題<br>實際題庫：${filteredQuestions.length} 題<br><br>是否使用全部 ${filteredQuestions.length} 題進行測驗？`);
+          if (!confirmUseAll) return;
+          finalQuiz = filteredQuestions;
+        } else {
+          const shuffled = [...filteredQuestions].sort(() => Math.random() - 0.5);
+          finalQuiz = shuffled.slice(0, subjectInfo.totalCount);
+        }
+      } else {
+        // 個別科目模式：先檢查題庫是否充足
+        let insufficientSubjects = [];
+        for (const subjectCount of subjectInfo.subjectCounts) {
+          const subjectQuestions = allLoadedQuestions.filter(q =>
+            q.subject === subjectCount.subject || (q.tags && q.tags.includes(subjectCount.subject))
+          );
+          if (subjectQuestions.length === 0) {
+            insufficientSubjects.push(`${subjectCount.subject}：0 題（要求 ${subjectCount.count} 題）`);
+          } else if (subjectQuestions.length < subjectCount.count) {
+            insufficientSubjects.push(`${subjectCount.subject}：${subjectQuestions.length} 題（要求 ${subjectCount.count} 題）`);
+          }
+        }
+        
+        if (insufficientSubjects.length > 0) {
+          const confirmMessage = `以下科目題庫數量不足：<br><br>${insufficientSubjects.join('<br>')}<br><br>是否使用現有題目進行測驗？`;
+          const confirmUseAvailable = await customConfirm(confirmMessage);
+          if (!confirmUseAvailable) return;
+        }
+        
+        // 實際選取
+        for (const subjectCount of subjectInfo.subjectCounts) {
+          const subjectQuestions = allLoadedQuestions.filter(q =>
+            q.subject === subjectCount.subject || (q.tags && q.tags.includes(subjectCount.subject))
+          );
+          if (subjectQuestions.length === 0) continue;
+          
+          if (subjectQuestions.length <= subjectCount.count) {
+            finalQuiz = finalQuiz.concat(subjectQuestions);
+          } else {
+            const shuffled = [...subjectQuestions].sort(() => Math.random() - 0.5);
+            finalQuiz = finalQuiz.concat(shuffled.slice(0, subjectCount.count));
+          }
+        }
+      }
+
+      if (finalQuiz.length === 0) {
+        alert('沒有符合條件的題目，請重新選擇年份或科目');
+        return;
+      }
+
+      // 排序
+      const questionOrder = document.getElementById('questionOrder').value;
+      if (questionOrder === 'random') {
+        quiz = [...finalQuiz].sort(() => Math.random() - 0.5);
+      } else {
+        quiz = [...finalQuiz].sort((a, b) => a.id - b.id);
+      }
+      
+      currentQuestion = 0;
+      correct = 0;
+
+      const mode = document.getElementById('mode').value;
+      isStepMode = mode === 'step';
+      const isBrowseMode = mode === 'browse';
+      
+      document.getElementById('result').innerText = '';
+      document.getElementById('quiz').innerHTML = '';
+      document.getElementById('setupSection').classList.add('hidden');
+      document.getElementById('headerSection').classList.add('hidden');
+
+      if (isBrowseMode) {
+        showBrowseResults();
+      } else if (isStepMode) {
+        document.getElementById('progressInfo').classList.remove('hidden');
+        document.getElementById('stepControls').classList.remove('hidden');
+        document.getElementById('submitBtn').classList.add('hidden');
+        document.getElementById('totalQuestions').innerText = quiz.length;
+        canUseSpacebar = true;
+        showQuestion(currentQuestion);
+      } else {
+        document.getElementById('progressInfo').classList.add('hidden');
+        document.getElementById('stepControls').classList.add('hidden');
+        document.getElementById('submitBtn').classList.remove('hidden');
+        canUseSpacebar = false;
+        showAllQuestions();
+      }
+    }
+
+    // ===== 答題記錄功能 =====
+    function loadUserProgress(file) {
+      if (!file) return;
+      
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const loadedProgress = JSON.parse(e.target.result);
+          if (!loadedProgress.metadata) throw new Error("檔案格式不正確");
+          
+          let mergedCount = 0;
+          let newCount = 0;
+          
+          Object.keys(loadedProgress).forEach(key => {
+            if (key !== 'metadata') {
+              const questionId = parseInt(key);
+              if (!isNaN(questionId) && Array.isArray(loadedProgress[key])) {
+                if (userProgress[questionId] && Array.isArray(userProgress[questionId])) {
+                  userProgress[questionId] = [...loadedProgress[key], ...userProgress[questionId]];
+                  mergedCount++;
+                } else {
+                  userProgress[questionId] = [...loadedProgress[key]];
+                  newCount++;
+                }
+              }
+            }
+          });
+          
+          userProgress.metadata = {
+            version: loadedProgress.metadata.version || "1.0",
+            lastUpdated: new Date().toISOString(),
+            totalAttempted: Object.keys(userProgress).filter(key => key !== 'metadata').length
+          };
+          
+          hasLoadedProgress = true;
+          loadedFileName = file.name.replace(/\.json$/, '').replace(/_updated_[\d\-T]+$/, '');
+          
+          updateHistoryButtonState();
+          updateRecordStatus('success', `載入成功！總計 ${Object.keys(userProgress).filter(k => k !== 'metadata').length} 題記錄`);
+          setTimeout(() => updateVisualizationButtonState(), 100);
+          
+        } catch (error) {
+          console.error("載入檔案錯誤:", error);
+          updateRecordStatus('error', "檔案格式錯誤");
+          loadedFileName = '';
+          hasLoadedProgress = false;
+          updateHistoryButtonState();
+          setTimeout(() => updateVisualizationButtonState(), 100);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function updateRecordStatus(type, message) {
+      const statusElement = document.getElementById('recordStatus');
+      if (statusElement) {
+        statusElement.textContent = message;
+        statusElement.className = `record-status ${type}`;
+      }
+    }
+
+    function recordCurrentTest() {
+      let recordedCount = 0;
+      quiz.forEach(q => {
+        if (!q.userAnswer) return;
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        const result = isBonusQuestion ? 1 : (isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0);
+        if (!userProgress[q.id]) userProgress[q.id] = [];
+        userProgress[q.id].push(result);
+        recordedCount++;
+      });
+      
+      userProgress.metadata = {
+        version: "1.0",
+        lastUpdated: new Date().toISOString(),
+        totalAttempted: Object.keys(userProgress).filter(key => key !== 'metadata').length
+      };
+      
+      setTimeout(() => updateVisualizationButtonState(), 100);
+    }
+
+    function downloadCurrentProgress() {
+      let currentTestProgress = {
+        metadata: { version: "1.0", lastUpdated: new Date().toISOString(), totalAttempted: 0 }
+      };
+      let currentTestCount = 0;
+      
+      quiz.forEach(q => {
+        if (q.userAnswer) {
+          const optionCount = Object.keys(q.options).length;
+          const result = optionCount === 5 ? 1 : (isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0);
+          currentTestProgress[q.id] = [result];
+          currentTestCount++;
+        }
+      });
+      
+      if (currentTestCount === 0) {
+        updateRecordStatus('error', '沒有目前作答記錄');
+        return;
+      }
+      
+      currentTestProgress.metadata.totalAttempted = currentTestCount;
+      const blob = new Blob([JSON.stringify(currentTestProgress, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `答題記錄_${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+      updateRecordStatus('success', '目前記錄已下載');
+    }
+
+    function updateHistoryButtonState() {
+      const historyBtn = document.getElementById('historyRecordBtn');
+      if (!historyBtn) return;
+      if (!hasLoadedProgress || !loadedFileName) {
+        historyBtn.disabled = true;
+      } else {
+        historyBtn.disabled = false;
+      }
+    }
+    
+    function downloadHistoryProgress() {
+      if (!hasLoadedProgress || !loadedFileName) {
+        updateRecordStatus('error', '沒有歷史記錄檔');
+        return;
+      }
+      const blob = new Blob([JSON.stringify(userProgress, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `${loadedFileName}_updated_${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+      updateRecordStatus('success', '歷史記錄已下載');
+    }
+
+    // ===== showQuestion =====
+    function showQuestion(i) {
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
+      const q = quiz[i];
+      hasWarned = false;
+      document.getElementById('currentQuestionNum').innerText = i + 1;
+      
+      const qBlock = document.createElement('div');
+      qBlock.className = 'question-block';
+      
+      const isAnswered = q.userAnswer !== undefined;
+      
+      qBlock.innerHTML = `
+        <h3>第 ${i + 1} 題</h3>
+        <p>${q.question}</p>
+        ${q.images ? generateImageHTML(q.images) : ''}
+        ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}" ${isAnswered && q.userAnswer === key ? 'checked' : ''} ${isAnswered ? 'disabled' : ''}> ${key}. ${value}</label><br>`).join('')}
+        <div class="warning-message" id="warning${i}">⚠️ 請先選擇一個選項再提交答案！</div>
+        <div class="explanation" id="explanation${i}">${q.explanation}</div>
+        <button id="submitAnswerBtn${i}" class="submit-answer-btn" onclick="checkStep(${i})" ${isAnswered ? 'style="display:none"' : ''}>提交答案</button>
+      `;
+      quizDiv.appendChild(qBlock);
+      
+      if (isAnswered) {
+        const explanation = document.getElementById(`explanation${i}`);
+        explanation.dataset.answered = "true";
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        explanation.classList.remove('correct', 'incorrect');
+        
+        let explanationText = '';
+        if (isBonusQuestion && q.userAnswer) {
+          explanation.classList.add('correct');
+          explanationText = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${q.userAnswer}. ${q.options[q.userAnswer]}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
+        } else if (q.userAnswer && isAnswerCorrect(q.userAnswer, q.answer)) {
+          explanation.classList.add('correct');
+          explanationText = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
+        } else {
+          explanation.classList.add('incorrect');
+          explanationText = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：<br>${formatUserAnswer(q.userAnswer, q.options)}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
+        }
+        explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
+        explanation.style.display = 'block';
+        hasWarned = false;
+      }
+      
+      updateButtonDisplay();
+    }
+
+    function checkStep(i) {
+      const chosen = document.querySelector(`input[name='q${i}']:checked`);
+      const explanation = document.getElementById(`explanation${i}`);
+      const submitBtn = document.getElementById(`submitAnswerBtn${i}`);
+      const warningMsg = document.getElementById(`warning${i}`);
+      
+      if (!chosen) {
+        if (!hasWarned) {
+          warningMsg.style.display = 'block';
+          hasWarned = true;
+          return;
+        }
+        warningMsg.style.display = 'none';
+      }
+      
+      document.querySelectorAll(`input[name='q${i}']`).forEach(option => { option.disabled = true; });
+      
+      if (!explanation.dataset.answered) {
+        explanation.dataset.answered = "true";
+        quiz[i].userAnswer = chosen ? chosen.value : null;
+        
+        const optionCount = Object.keys(quiz[i].options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        let explanationText = '';
+        if (isBonusQuestion && chosen) {
+          explanation.classList.add('correct');
+          correct++;
+          quiz[i].isCorrect = true;
+          explanationText = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(quiz[i].tags)}<br>你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}<br>正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}<br>詳解：${quiz[i].explanation}`;
+        } else if (chosen && isAnswerCorrect(chosen.value, quiz[i].answer)) {
+          explanation.classList.add('correct');
+          correct++;
+          quiz[i].isCorrect = true;
+          explanationText = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(quiz[i].tags)}<br>正確答案：${formatCorrectAnswer(quiz[i].answer, quiz[i].options)}<br>詳解：${quiz[i].explanation}`;
+        } else {
+          explanation.classList.add('incorrect');
+          quiz[i].isCorrect = false;
+          explanationText = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(quiz[i].tags)}<br>你的答案：${chosen ? chosen.value + '. ' + quiz[i].options[chosen.value] : '未作答'}<br>正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}<br>詳解：${quiz[i].explanation}`;
+        }
+        explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
+        submitBtn.style.display = 'none';
+        explanation.style.display = 'block';
+        
+        const isLast = currentQuestion >= quiz.length - 1;
+        if (!isLast) {
+          updateButtonDisplay();
+        } else {
+          document.getElementById('earlySubmitBtn').style.display = 'none';
+          setTimeout(() => showFinalResults(), 1000);
+        }
+      }
+    }
+    
+    function prevQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+        updateButtonDisplay();
+      }
+    }
+
+    function nextQuestion() {
+      currentQuestion++;
+      if (currentQuestion < quiz.length) {
+        showQuestion(currentQuestion);
+        updateButtonDisplay();
+      } else {
+        showFinalResults();
+      }
+    }
+
+    function updateButtonDisplay() {
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const earlySubmitBtn = document.getElementById('earlySubmitBtn');
+      
+      prevBtn.style.display = currentQuestion > 0 ? 'inline' : 'none';
+      
+      const isAnswered = quiz[currentQuestion].userAnswer !== undefined;
+      const isLastQuestion = currentQuestion >= quiz.length - 1;
+      
+      if (isAnswered && !isLastQuestion) {
+        nextBtn.style.display = 'inline';
+        if (currentQuestion > 0) nextBtn.parentNode.insertBefore(prevBtn, nextBtn);
+      } else {
+        nextBtn.style.display = 'none';
+      }
+      
+      earlySubmitBtn.style.display = (isLastQuestion && isAnswered) ? 'none' : 'inline';
+    }
+
+    async function earlySubmit() {
+      const remainingQuestions = quiz.length - currentQuestion - 1;
+      const confirmSubmit = await customConfirm(`確定要提早交卷嗎？<br><br>目前進度：第 ${currentQuestion + 1} 題 / 共 ${quiz.length} 題<br>剩餘題數：${remainingQuestions} 題<br><br>未作答的題目將計為錯誤。`);
+      
+      if (confirmSubmit) {
+        const currentExplanation = document.getElementById(`explanation${currentQuestion}`);
+        if (currentExplanation && !currentExplanation.dataset.answered) {
+          const chosen = document.querySelector(`input[name='q${currentQuestion}']:checked`);
+          quiz[currentQuestion].userAnswer = chosen ? chosen.value : null;
+          if (chosen && chosen.value === quiz[currentQuestion].answer) {
+            quiz[currentQuestion].isCorrect = true;
+            correct++;
+          } else {
+            quiz[currentQuestion].isCorrect = false;
+          }
+        }
+        for (let i = currentQuestion + 1; i < quiz.length; i++) {
+          quiz[i].userAnswer = null;
+          quiz[i].isCorrect = false;
+        }
+        showFinalResults();
+      }
+    }
+
+    function showBrowseResults() {
+      canUseSpacebar = false;
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      document.getElementById('quiz').innerHTML = '';
+      
+      const total = quiz.length;
+      let detailedResults = '';
+      
+      quiz.forEach((q, idx) => {
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        let questionResult = `第 ${idx + 1} 題：${q.question}\n`;
+        if (q.images && q.images.length > 0) questionResult += `${generateImageHTML(q.images)}\n`;
+        questionResult += `標籤：${formatTags(q.tags)}\n選項：\n`;
+        Object.entries(q.options).forEach(([key, value]) => { questionResult += `  ${key}. ${value}\n`; });
+        questionResult += `正確答案：${formatCorrectAnswer(q.answer, q.options)}${isBonusQuestion ? ' （送分題）' : ''}\n詳解：${q.explanation}\n${'-'.repeat(30)}\n\n`;
+        detailedResults += `<div class="question-result browse-mode" data-question-index="${idx}">${questionResult}</div>`;
+      });
+      
+      let htmlSummary = `
+        <div class="record-management">
+          <div class="record-section">
+            <h3>📂 載入記錄</h3>
+            <div class="file-input-wrapper">
+              <input type="file" accept=".json" class="file-input" onchange="loadUserProgress(this.files[0])">
+              <button class="file-input-btn">選擇記錄檔</button>
+            </div>
+            <div class="record-status info" id="recordStatus">尚未載入記錄檔案</div>
+          </div>
+          <div class="record-section">
+            <h3>📊 視覺化分析</h3>
+            <div class="download-buttons">
+              <button id="visualizationBtn" class="visualization-btn" onclick="openVisualization()" disabled>答題狀況視覺化</button>
+            </div>
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">瀏覽模式不會記錄答題結果</div>
+          </div>
+        </div>
+      `;
+      
+      setTimeout(() => { updateHistoryButtonState(); updateVisualizationButtonState(); }, 100);
+      
+      htmlSummary += `<div style="background: #e7f3ff; border: 1px solid #b8daff; border-radius: 5px; padding: 15px; margin: 15px 0; text-align: center;">
+        <h3 style="margin: 0 0 5px 0; color: #0c5460;">📖 瀏覽模式</h3>
+        <p style="margin: 0; color: #0c5460;">總共 ${total} 題目內容和詳解</p>
+      </div>`;
+      
+      htmlSummary += `<div style="white-space: pre-wrap; font-family: monospace;">【題目內容與詳解】\n${'='.repeat(50)}\n\n`;
+      htmlSummary += detailedResults + `</div><br>`;
+      htmlSummary += `<button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
+      
+      document.getElementById('result').innerHTML = htmlSummary;
+    }
+
+    function showFinalResults() {
+      recordCurrentTest();
+      canUseSpacebar = false;
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('quiz').innerHTML = '';
+      
+      showingWrongAnswersOnly = false;
+      wrongQuestionIndices = [];
+      
+      const total = quiz.length;
+      const wrong = total - correct;
+      let detailedResults = '';
+      
+      quiz.forEach((q, idx) => {
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        let isCorrect = isBonusQuestion && q.userAnswer ? true : isAnswerCorrect(q.userAnswer, q.answer);
+        
+        if (!isCorrect) wrongQuestionIndices.push(idx);
+        
+        const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
+        const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
+        
+        let questionResult = `第 ${idx + 1} 題：${q.question}\n`;
+        if (q.images && q.images.length > 0) questionResult += `${generateImageHTML(q.images)}\n`;
+        questionResult += `標籤：${formatTags(q.tags)}\n選項：\n`;
+        Object.entries(q.options).forEach(([key, value]) => { questionResult += `  ${key}. ${value}\n`; });
+        questionResult += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : "未作答"}\n正確答案：${formatCorrectAnswer(q.answer, q.options)}\n結果：<span class="${resultClass}">${resultText}</span>\n詳解：${q.explanation}\n${'-'.repeat(30)}\n\n`;
+        detailedResults += `<div class="question-result" data-question-index="${idx}" data-is-correct="${isCorrect}">${questionResult}</div>`;
+      });
+      
+      let htmlSummary = `
+        <div class="record-management">
+          <div class="record-section">
+            <h3>📂 載入記錄</h3>
+            <div class="file-input-wrapper">
+              <input type="file" accept=".json" class="file-input" onchange="loadUserProgress(this.files[0])">
+              <button class="file-input-btn">選擇記錄檔</button>
+            </div>
+            <div class="record-status info" id="recordStatus">尚未載入記錄檔案</div>
+          </div>
+          <div class="record-section">
+            <h3>💾 下載記錄</h3>
+            <div class="download-buttons">
+              <button class="current-record-btn" onclick="downloadCurrentProgress()">下載目前作答記錄</button>
+              <button id="historyRecordBtn" class="history-record-btn" onclick="downloadHistoryProgress()" disabled>下載歷史完整記錄</button>
+            </div>
+          </div>
+          <div class="record-section">
+            <h3>📊 視覺化分析</h3>
+            <div class="download-buttons">
+              <button id="visualizationBtn" class="visualization-btn" onclick="openVisualization()" disabled>答題狀況視覺化</button>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      setTimeout(() => { updateHistoryButtonState(); updateVisualizationButtonState(); }, 100);
+      
+      if (wrongQuestionIndices.length > 0) {
+        htmlSummary += `<button id="wrongAnswersToggle" class="wrong-answers-toggle" onclick="toggleWrongAnswers()">只顯示錯題 (${wrongQuestionIndices.length} 題)</button><br><br>`;
+      }
+      
+      htmlSummary += `<div style="white-space: pre-wrap; font-family: monospace;">總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n【詳細答題結果】\n${'='.repeat(50)}\n\n`;
+      htmlSummary += detailedResults + `</div><br>`;
+      htmlSummary += `<button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
+      
+      document.getElementById('result').innerHTML = htmlSummary;
+    }
+
+    function toggleWrongAnswers() {
+      const toggleBtn = document.getElementById('wrongAnswersToggle');
+      const questionResults = document.querySelectorAll('.question-result');
+      
+      if (!showingWrongAnswersOnly) {
+        showingWrongAnswersOnly = true;
+        toggleBtn.textContent = `顯示全部題目 (共 ${quiz.length} 題)`;
+        toggleBtn.classList.add('show-all');
+        questionResults.forEach(result => {
+          if (result.dataset.isCorrect === 'true') result.classList.add('hidden');
+        });
+      } else {
+        showingWrongAnswersOnly = false;
+        toggleBtn.textContent = `只顯示錯題 (${wrongQuestionIndices.length} 題)`;
+        toggleBtn.classList.remove('show-all');
+        questionResults.forEach(result => result.classList.remove('hidden'));
+      }
+    }
+
+    function resetQuiz() {
+      const savedUserProgress = JSON.parse(JSON.stringify(userProgress));
+      const savedHasLoadedProgress = hasLoadedProgress;
+      const savedLoadedFileName = loadedFileName;
+      const savedHomepageState = JSON.parse(JSON.stringify(homepageRecordState));
+      
+      quiz = [];
+      currentQuestion = 0;
+      correct = 0;
+      isStepMode = false;
+      canUseSpacebar = false;
+      hasWarned = false;
+      showingWrongAnswersOnly = false;
+      wrongQuestionIndices = [];
+      
+      document.querySelectorAll('input[type="radio"]').forEach(r => { r.checked = false; r.disabled = false; });
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => { cb.checked = false; });
+      document.querySelectorAll('.subject-count input[type="number"]').forEach(input => { input.value = '1'; });
+      document.querySelectorAll('.subject-count').forEach(d => { d.style.display = 'none'; });
+      document.getElementById('mode').selectedIndex = 0;
+      document.getElementById('questionOrder').selectedIndex = 0;
+      document.querySelectorAll('.warning-message').forEach(w => { w.style.display = 'none'; });
+      document.querySelectorAll('.explanation').forEach(e => {
+        e.style.display = 'none';
+        e.classList.remove('correct', 'incorrect');
+        e.innerHTML = '';
+        if (e.dataset.answered) delete e.dataset.answered;
+      });
+      document.querySelectorAll('.visual-checkbox').forEach(e => { e.classList.remove('selected'); });
+      
+      document.getElementById('setupSection').classList.remove('hidden');
+      document.getElementById('headerSection').classList.remove('hidden');
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      document.getElementById('quiz').innerHTML = '';
+      document.getElementById('result').innerHTML = '';
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('prevBtn').style.display = 'none';
+      document.getElementById('earlySubmitBtn').style.display = 'none';
+      document.getElementById('currentQuestionNum').innerText = '1';
+      document.getElementById('totalQuestions').innerText = '0';
+      
+      document.querySelectorAll('select, input, button').forEach(el => { el.disabled = false; });
+      
+      userProgress = savedUserProgress;
+      hasLoadedProgress = savedHasLoadedProgress;
+      loadedFileName = savedLoadedFileName;
+      homepageRecordState = savedHomepageState;
+      
+      setTimeout(() => {
+        updateVisualStyles();
+        window.scrollTo(0, 0);
+        if (homepageRecordState.hasLoaded) {
+          updateHomepageRecordStatus('success', `✅ 已載入：${homepageRecordState.fileName}.json (${homepageRecordState.recordCount} 題記錄)`);
+        } else {
+          updateHomepageRecordStatus('info', '尚未載入記錄檔案');
+        }
+        updateHomepageVisualizationButton();
+        const homepageSection = document.getElementById('homepageRecordSection');
+        if (homepageSection) homepageSection.style.display = 'block';
+      }, 100);
+    }
+
+    function showAllQuestions() {
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
+      quiz.forEach((q, i) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'question-block';
+        qBlock.innerHTML = `
+          <h3>第 ${i + 1} 題 <span class="question-tags">${formatTags(q.tags)}</span></h3>
+          <p>${q.question}</p>
+          ${q.images ? generateImageHTML(q.images) : ''}
+          ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+          <div class="explanation" id="explanation${i}">${q.explanation}</div>
+        `;
+        quizDiv.appendChild(qBlock);
+      });
+    }
+
+    function submitQuiz() {
+      correct = 0;
+      quiz.forEach((q, i) => {
+        const chosen = document.querySelector(`input[name='q${i}']:checked`);
+        const explanation = document.getElementById(`explanation${i}`);
+        explanation.style.display = 'block';
+        q.userAnswer = chosen ? chosen.value : null;
+        
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        if (isBonusQuestion && chosen) {
+          explanation.classList.add('correct');
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen.value}. ${q.options[chosen.value]}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
+          correct++;
+          q.isCorrect = true;
+        } else if (chosen && isAnswerCorrect(chosen.value, q.answer)) {
+          explanation.classList.add('correct');
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
+          correct++;
+          q.isCorrect = true;
+        } else {
+          explanation.classList.add('incorrect');
+          explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen ? chosen.value + '. ' + q.options[chosen.value] : '未作答'}<br>正確答案：${formatCorrectAnswer(q.answer, q.options)}<br>詳解：${q.explanation}`;
+          q.isCorrect = false;
+        }
+      });
+      
+      document.getElementById('submitBtn').classList.add('hidden');
+      setTimeout(() => showFinalResults(), 1000);
+    }
+
+    // ===== 圖片相關 =====
+    function showImageOverlay(src) {
+      const overlay = document.getElementById('imageOverlay');
+      document.getElementById('overlayImage').src = src;
+      overlay.style.display = 'flex';
+    }
+    
+    function closeImageOverlay() {
+      document.getElementById('imageOverlay').style.display = 'none';
+    }
+    
+    function generateImageHTML(images) {
+      if (!images || images.length === 0) return '';
+      let html = '<div class="question-images">';
+      images.forEach(imagePath => {
+        html += `<img src="${imagePath}" alt="題目圖片" onclick="showImageOverlay('${imagePath}')">`;
+      });
+      html += '</div>';
+      return html;
+    }
+  
+    // ===== 視覺化功能（保留原版Tab結構不動） =====
+    
+    // parseQuestionId：改為解析6位ID（前3位年份 + 後3位題號）
+    function parseQuestionId(questionId) {
+      const idStr = questionId.toString().padStart(6, '0');
+      const year = parseInt(idStr.substring(0, 3));
+      const questionNum = parseInt(idStr.substring(3, 6));
+      const displayQuestionNum = questionNum === 0 ? 1000 : questionNum;
+      
+      return {
+        year: year,
+        questionNumber: displayQuestionNum,
+        fullName: `${year}`
+      };
+    }
+
+    function updateVisualizationButtonState() {
+      const visualizationBtn = document.getElementById('visualizationBtn');
+      if (!visualizationBtn) return;
+      const hasRecords = userProgress && Object.keys(userProgress).filter(key => key !== 'metadata').length > 0;
+      visualizationBtn.disabled = !hasRecords;
+    }
+
+    function openVisualization() {
+      if (!userProgress || Object.keys(userProgress).filter(key => key !== 'metadata').length === 0) {
+        alert('沒有可視覺化的答題記錄');
+        return;
+      }
+      processVisualizationData();
+      document.getElementById('visualizationModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVisualization() {
+      document.getElementById('visualizationModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function processVisualizationData() {
+      const questionData = { ...userProgress };
+      delete questionData.metadata;
+
+      const parsedQuestions = {};
+      Object.keys(questionData).forEach(questionId => {
+        const parsed = parseQuestionId(questionId);
+        const key = `${parsed.year}`;
+        if (!parsedQuestions[key]) parsedQuestions[key] = {};
+        parsedQuestions[key][parsed.questionNumber] = questionData[questionId];
+      });
+
+      generateVisualizationDisplay(parsedQuestions);
+    }
+
+    // 視覺化Tab切換（保留原版結構）
+    function switchVisualTab(grade) {
+      const tabMap = { med3: 'visTab3', med4: 'visTab4', med5: 'visTab5', med6: 'visTab6' };
+      Object.keys(tabMap).forEach(key => {
+        const btn = document.getElementById(tabMap[key]);
+        if (btn) btn.classList.toggle('active', key === grade);
+      });
+      ['med3', 'med4', 'med5', 'med6'].forEach(key => {
+        const section = document.getElementById(`visSection-${key}`);
+        if (section) section.classList.toggle('active', key === grade);
+      });
+    }
+
+    function generateVisualizationDisplay(parsedQuestions) {
+      const container = document.getElementById('visualizationContent');
+      const years = ['114', '113', '112', '111', '110', '109'];
+
+      // 保留原版Tab結構，用年份分成兩組顯示（每Tab顯示3年）
+      const gradeConfig = [
+        { key: 'med3', title: '114–112 年', years: ['114', '113', '112'] },
+        { key: 'med4', title: '111–109 年', years: ['111', '110', '109'] }
+      ];
+
+      let html = '';
+      gradeConfig.forEach((cfg, index) => {
+        const activeClass = index === 0 ? 'active' : '';
+        html += `<div class="vis-exam-section ${activeClass}" id="visSection-${cfg.key}">`;
+        html += generateVisualizationExamSection(cfg.title, cfg.years, parsedQuestions);
+        html += `</div>`;
+      });
+      // 隱藏的med5、med6佔位（保持Tab結構不報錯）
+      html += `<div class="vis-exam-section" id="visSection-med5"></div>`;
+      html += `<div class="vis-exam-section" id="visSection-med6"></div>`;
+
+      container.innerHTML = html;
+    }
+
+    function generateVisualizationExamSection(title, years, parsedQuestions) {
+      let html = `
+        <div class="exam-section">
+          <div class="exam-header">${title} 試卷</div>
+          <div class="year-grid">
+      `;
+
+      years.forEach(year => {
+        html += `
+          <div class="year-column">
+            <div class="year-header">${year} 年</div>
+            <div class="questions-container">
+        `;
+
+        const questionsForYear = parsedQuestions[year] || {};
+        
+        if (Object.keys(questionsForYear).length === 0) {
+          html += '<div class="empty-state">暫無答題記錄</div>';
+        } else {
+          const maxQ = Math.max(...Object.keys(questionsForYear).map(Number));
+          for (let i = 1; i <= maxQ; i++) {
+            const attempts = questionsForYear[i] || [];
+            html += generateVisualizationQuestionRow(i, attempts);
+          }
+        }
+
+        html += `</div></div>`;
+      });
+
+      html += `</div></div>`;
+      return html;
+    }
+
+    function generateVisualizationQuestionRow(questionNum, attempts) {
+      let answerHistory = '';
+      if (attempts.length === 0) {
+        answerHistory = '<span style="color: #dee2e6;">—</span>';
+      } else {
+        attempts.forEach(attempt => {
+          if (attempt === 1) answerHistory += '<span class="answer-symbol correct-symbol">✅</span>';
+          else if (attempt === 0) answerHistory += '<span class="answer-symbol incorrect-symbol">❌</span>';
+        });
+      }
+      return `
+        <div class="question-row">
+          <span class="question-number">題${questionNum}:</span>
+          <div class="answer-history">${answerHistory}</div>
+        </div>
+      `;
+    }
+
+    // ===== 首頁記錄檔管理 =====
+    let homepageRecordState = { hasLoaded: false, fileName: '', recordCount: 0 };
+    
+    function loadHomepageRecord(file) {
+      if (!file) return;
+      loadUserProgress(file);
+      setTimeout(() => {
+        if (hasLoadedProgress && loadedFileName) {
+          const recordCount = Object.keys(userProgress).filter(key => key !== 'metadata').length;
+          homepageRecordState = { hasLoaded: true, fileName: loadedFileName, recordCount: recordCount };
+          updateHomepageRecordStatus('success', `✅ 已載入：${loadedFileName}.json (${recordCount} 題記錄)`);
+        } else {
+          homepageRecordState = { hasLoaded: false, fileName: '', recordCount: 0 };
+          updateHomepageRecordStatus('error', "❌ 檔案格式錯誤，請選擇正確的記錄檔");
+        }
+        updateHomepageVisualizationButton();
+      }, 200);
+    }
+    
+    function updateHomepageRecordStatus(type, message) {
+      const statusElement = document.getElementById('homepageRecordStatus');
+      if (statusElement) {
+        statusElement.textContent = message;
+        statusElement.className = `homepage-record-status ${type}`;
+      }
+    }
+    
+    function updateHomepageVisualizationButton() {
+      const btn = document.getElementById('homepageVisualizationBtn');
+      if (!btn) return;
+      const hasRecords = homepageRecordState.hasLoaded || 
+                        (userProgress && Object.keys(userProgress).filter(key => key !== 'metadata').length > 0);
+      btn.disabled = !hasRecords;
+    }
+    
+    function openHomepageVisualization() {
+      if (!userProgress || Object.keys(userProgress).filter(key => key !== 'metadata').length === 0) {
+        updateHomepageRecordStatus('error', '❌ 沒有可視覺化的答題記錄');
+        return;
+      }
+      processVisualizationData();
+      document.getElementById('visualizationModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    // ===== 頁面初始化 =====
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => {
+        updateVisualStyles();
+        updateHomepageVisualizationButton();
+        updateVisualizationButtonState();
+      }, 50);
+    });
+
+    // ESC鍵關閉覆蓋層
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeImageOverlay();
+        closeVisualization();
+      }
+    });
+
+  </script>
+
+  <!-- 圖片放大顯示覆蓋層 -->
+  <div class="image-overlay" id="imageOverlay" onclick="closeImageOverlay()">
+    <img id="overlayImage" src="" alt="放大圖片">
+  </div>
+
+  <!-- 視覺化彈出視窗（保留原版Tab結構） -->
+  <div class="visualization-modal" id="visualizationModal">
+    <div class="visualization-content">
+      <div class="visualization-header">
+        <h2>📊 答題狀況視覺化分析</h2>
+        <button class="close-visualization" onclick="closeVisualization()">✕</button>
+      </div>
+      <div class="visualization-tab-bar">
+        <button id="visTab3" class="vis-tab-btn active" onclick="switchVisualTab('med3')">114–112 年</button>
+        <button id="visTab4" class="vis-tab-btn" onclick="switchVisualTab('med4')">111–109 年</button>
+        <button id="visTab5" class="vis-tab-btn" style="display:none" onclick="switchVisualTab('med5')"></button>
+        <button id="visTab6" class="vis-tab-btn" style="display:none" onclick="switchVisualTab('med6')"></button>
+      </div>
+      <div class="visualization-body" id="visualizationBody">
+        <div id="visualizationContent"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
