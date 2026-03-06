@@ -1257,7 +1257,7 @@
         <strong>選擇科目</strong><br>
         <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="internalmed-all" onchange="handleSelectAll('internalmed-subject')">全選</div>
         <div class="subject-count" id="count-internalmed-all-subjects" style="display:none;">
-          總題數：<input type="number" value="80" min="1" max="500">
+          總題數：<input type="number" value="160" min="1" max="500">
         </div>
         <br>
         <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="心臟科" onchange="toggleSubjectCount(this, 'internalmed')">心臟科<div class="subject-count" id="count-internalmed-心臟科">題數：<input type="number" value="1" min="1" max="200"></div></div><br>
@@ -1512,12 +1512,12 @@
       const isAllSelected = allCheckbox ? allCheckbox.checked : false;
       const subjects = Array.from(checkedSubjects).map(cb => cb.value);
       
-      let totalCount = 80;
+      let totalCount = 160;
       let subjectCounts = [];
       
       if (isAllSelected) {
         const totalCountInput = document.querySelector('#count-internalmed-all-subjects input');
-        totalCount = parseInt(totalCountInput.value) || 80;
+        totalCount = parseInt(totalCountInput.value) || 160;
       } else {
         subjectCounts = subjects.map(subject => {
           const countInput = document.querySelector(`#count-internalmed-${subject} input`);
