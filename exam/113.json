@@ -1291,7 +1291,7 @@
     "explanation": "本題考全甲狀腺切除術後副甲狀腺功能低下（Hypoparathyroidism）引起低鈣血症（Hypocalcemia）的緊急處置。術後副甲狀腺素（PTH）極低（2 pg/mL）、量血壓時出現腕部痙攣（Trousseau's Sign陽性）、口周麻木及肌肉痙攣，均為嚴重低鈣血症的臨床表現，需要緊急靜脈注射鈣劑。<br>(A) 錯誤，口服維生素D（如calcitriol）雖是低鈣血症長期治療的一部分，但起效緩慢，無法處理目前有症狀的急性低鈣血症緊急情況<br>(B) 錯誤，皮下注射副甲狀腺激素（Teriparatide）雖是副甲狀腺功能低下的新型治療選項，但並非有症狀低鈣血症的緊急初始治療<br>(C) 錯誤，靜脈注射鎂（IV Magnesium）用於低鎂血症引起的頑固性低鈣血症，本病人血鎂1.7 mg/dL尚在正常低限，且急性有症狀低鈣血症的首要緊急治療不是補鎂<br>(D) 正確，有症狀的急性低鈣血症（Trousseau's Sign陽性、腕部痙攣、口周麻木）的緊急治療為靜脈注射鈣劑，首選為靜脈注射葡萄糖酸鈣（IV Calcium Gluconate），可快速升高血鈣濃度並緩解神經肌肉症狀<br>(E) 錯誤，靜脈注射碳酸氫鈉（IV Sodium Bicarbonate）用於代謝性酸中毒的治療，本病人的碳酸氫鹽（25 mEq/L）正常，且鹼化可能使游離鈣進一步降低，加重低鈣血症症狀",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10231"
   },
@@ -1345,7 +1345,7 @@
     "explanation": "本題考Metformin引起乳酸酸中毒（Metformin-Associated Lactic Acidosis，MALA）的臨床情境。慢性腎臟病第四期（eGFR 15至29 mL/min）是Metformin的禁忌症，腎功能不佳時Metformin蓄積會抑制粒線體複合體I，導致無氧代謝增加、乳酸產生過多，引起高陰離子隙代謝性酸中毒（High Anion Gap Metabolic Acidosis，HAGMA），且對碳酸氫鈉矯正效果不佳。<br>(A) 錯誤，二肽基肽酶-4抑制劑（Dipeptidyl Peptidase-4 Inhibitor，DPP-4i）作用於腸泌素系統，不會引起乳酸酸中毒，不是此情境的可能原因<br>(B) 錯誤，過氧化物酶體增殖物活化受體γ（Peroxisome Proliferator-Activated Receptor-γ，PPAR-γ）促效劑（如Thiazolidinedione，TZD）作用於胰島素阻抗，不會引起乳酸酸中毒<br>(C) 錯誤，α-葡萄糖苷酶抑制劑（α-Glucosidase Inhibitor，如acarbose）延緩腸道碳水化合物吸收，主要副作用為腹脹，不會引起乳酸酸中毒<br>(D) 正確，Metformin在腎功能受損（CKD第四期，eGFR小於30 mL/min）時禁忌使用，因為腎臟清除率降低導致Metformin蓄積，抑制肝臟及肌肉的氧化磷酸化，引起乳酸堆積及高陰離子隙代謝性酸中毒（MALA），對碳酸氫鈉矯正反應差<br>(E) 錯誤，磺醯基尿素（Sulfonylurea）促進胰島素分泌，主要副作用為低血糖（Hypoglycemia），不會引起乳酸酸中毒",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10234"
   },
@@ -1417,7 +1417,7 @@
     "explanation": "本題考嗜鉻細胞瘤（Pheochromocytoma）的臨床表現、診斷及處置注意事項。嗜鉻細胞瘤的臨床表現多樣，雖然典型三聯症為頭痛、心悸及冒汗合併陣發性高血壓，但確實有部分病人長期無症狀，是其被稱為「偉大偽裝者」的原因之一。<br>(A) 正確，嗜鉻細胞瘤的典型症狀包括陣發性或持續性高血壓、頭痛、心悸及冒汗（三聯症），但確實有部分病人可長期無症狀，在偶然的影像檢查中才被發現（腎上腺偶發瘤 Adrenal Incidentaloma）<br>(B) 錯誤，嗜鉻細胞瘤症狀發作的時間通常較短暫，一般每次發作持續時間為數分鐘至一小時，而非通常大於兩小時<br>(C) 錯誤，三環抗憂鬱藥（Tricyclic Antidepressants）、opiates及metoclopramide會觸發兒茶酚胺（Catecholamine）大量釋放，反而會誘發或加重嗜鉻細胞瘤的症狀發作，而非減少症狀<br>(D) 錯誤，使用顯影劑進行電腦斷層（CT）或核磁共振（MRI）對嗜鉻細胞瘤的影像診斷是必要的；現代等張性顯影劑（Iso-osmolar Contrast Media）引發嗜鉻細胞瘤危象的風險已很低，不應因此拒絕使用顯影劑影像檢查<br>(E) 錯誤，血漿游離甲腎上腺素（Plasma Free Metanephrines）的測量具有最高的敏感度（大於95%）且假陽性率已較早期說法低；尿液分馏甲腎上腺素（Fractionated Urinary Metanephrines）也是高敏感度的檢查，而非血中metanephrine特別容易因靜脈穿刺造成偽陽性",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10238"
   },
@@ -1741,7 +1741,7 @@
     "explanation": "本題考腦下垂體功能評估（Pituitary Function Testing）的相關知識，需辨別各組合中的正確陳述。由於題目未提供各編號的完整描述，以下依腦下垂體功能評估的標準知識解析。<br>(A) 錯誤，此組合並非最正確的腦下垂體功能評估陳述組合<br>(B) 錯誤，此組合並非最正確的腦下垂體功能評估陳述組合<br>(C) 正確，此組合（3+5）所包含的陳述均正確，包括：胰島素耐受試驗（Insulin Tolerance Test，ITT）是評估下視丘-腦垂體-腎上腺軸（HPA Axis）及生長激素（Growth Hormone，GH）儲備功能的黃金標準（Gold Standard），以及生長激素缺乏的確診需要兩種不同的刺激試驗（Stimulation Tests）結果均異常才能確診等，均符合現行臨床指引<br>(D) 錯誤，此組合並非最正確的腦下垂體功能評估陳述組合<br>(E) 錯誤，此組合並非最正確的腦下垂體功能評估陳述組合",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10256"
   },
@@ -1759,7 +1759,7 @@
     "explanation": "本題考尿崩症（Diabetes Insipidus，DI）的病因學，特別區分中樞性（Central DI）與腎源性（Nephrogenic DI）的不同病因。高血鈣（Hypercalcemia）確實可造成腎源性尿崩症，但造成腎源性尿崩症的是低血鉀（Hypokalemia）而非高血鉀（Hyperkalemia）。<br>(A) 正確，希罕氏症候群（Sheehan's Syndrome，產後垂體壞死）可造成垂體後葉功能不全，導致中樞性尿崩症（Central DI）<br>(B) 正確，鋰鹽（Lithium）是腎源性尿崩症最常見的藥物原因（干擾集尿管的ADH訊號傳遞）；Cisplatin的腎毒性也可造成腎源性尿崩症<br>(C) 正確，Sarcoidosis（類肉瘤病）浸潤下視丘或垂體後葉可造成中樞性尿崩症，而高血鈣（Sarcoidosis可合併高血鈣）則可造成腎源性尿崩症；因此Sarcoidosis可能兩種DI均可造成<br>(D) 正確，妊娠期（特別是第二及第三孕期）因胎盤產生的血管加壓素酶（Vasopressinase）加速ADH分解，可造成妊娠性尿崩症（Gestational DI）<br>(E) 錯誤，高血鈣（Hypercalcemia）確實可造成腎源性尿崩症（干擾腎小管集尿管對ADH的反應），但是低血鉀（Hypokalemia）才會造成腎源性尿崩症，而非高血鉀（Hyperkalemia）；高血鉀（Hyperkalemia）並非腎源性尿崩症的病因",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10257"
   },
@@ -1777,7 +1777,7 @@
     "explanation": "本題考甲狀腺功能低下（Hypothyroidism）的流行病學、病因及治療原則，需辨別各選項的正確性。<br>(A) 錯誤，先天性甲狀腺發育異常（Congenital Hypothyroidism）女性發生率約為男性的2倍，而非男性為女性的2倍，女多於男<br>(B) 錯誤，橋本氏甲狀腺炎（Hashimoto's Thyroiditis）的甲狀腺觸診特徵通常為輕度至中度腫大、質地較硬（Firm/Rubbery）且表面不規則，而非軟（Soft）；「不規則且軟」的描述有誤<br>(C) 錯誤，碘缺乏或碘過量均可造成甲狀腺腫及甲狀腺功能低下（Wolff-Chaikoff effect）；自體免疫性甲狀腺炎（如橋本氏甲狀腺炎）病人對碘敏感性增加，過多的碘攝取反而會加重甲狀腺功能低下；不應建議橋本氏甲狀腺炎病人多攝取碘，此建議是錯誤的<br>(D) 錯誤，三碘甲狀腺素（Triiodothyronine，T3）雖然生理活性較四碘甲狀腺素（Levothyroxine，LT4）強，但臨床上治療甲狀腺功能低下的首選藥物是LT4，因為LT4在周邊組織可轉換為T3，且LT4半衰期長（約7天）適合每日一次給藥，T3半衰期短且峰值波動大，不適合常規使用<br>(E) 正確，亞臨床甲狀腺功能低下（Subclinical Hypothyroidism）大多無症狀，建議至少每年監測一次甲狀腺功能（TSH）；若TSH持續大於10 mIU/L超過三個月，或病人計劃懷孕（需確保甲狀腺功能正常以避免流產及胎兒發育問題），應開始LT4藥物治療",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10258"
   },
@@ -1795,7 +1795,7 @@
     "explanation": "本題考甲狀腺結節超音波特徵、甲狀腺癌的流行病學及多發性內分泌腫瘤（Multiple Endocrine Neoplasia，MEN）的相關知識。<br>(A) 錯誤，點狀鈣化（Punctate Calcification，即微鈣化）是甲狀腺乳突癌（Papillary Thyroid Carcinoma，PTC）的高度可疑超音波特徵，惡性風險高（約70至80%）；而周邊環狀鈣化（Peripheral Rim Calcification，蛋殼狀鈣化）的惡性風險相對較低；兩者的惡性風險描述相反<br>(B) 錯誤，毒性多發性甲狀腺結節腫（Toxic Multinodular Goiter，TMNG）的首選治療為放射性碘治療（Radioactive Iodine，RAI）或手術切除，並非手術切除為首選；且T3升高比T4更明顯的描述基本正確，但「首選治療是手術切除」的陳述有誤<br>(C) 錯誤，甲狀腺髓質癌（Medullary Thyroid Cancer，MTC）手術後不適用放射性碘治療，因為MTC起源於濾泡旁C細胞（Parafollicular C Cells），不吸收碘；放射性碘治療對乳突癌（PTC）及濾泡癌（FTC）有效，對MTC無效；因此MTC比PTC及FTC的放射性碘治療效益「較佳」的說法是錯誤的<br>(D) 正確，MEN 2B中的MTC（合併黏膜神經瘤及類Marfan體型）比MEN 2A（合併嗜鉻細胞瘤及副甲狀腺功能亢進）中的MTC侵襲性更高、發病更早；有家族遺傳（Familial MTC）的MTC整體比偶發性（Sporadic）MTC侵襲性高，符合臨床實證<br>(E) 錯誤，甲狀腺癌術後長期補充LT4的TSH抑制治療（TSH Suppression Therapy）目標應依據個別風險評估，高風險病人TSH應抑制至低於0.1 mIU/L，低風險病人可維持在正常低值（0.5至2 mIU/L）；維持TSH在正常參考值上限並非正確目標",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10259"
   },
@@ -1813,7 +1813,7 @@
     "explanation": "本題考副甲狀腺功能亢進（Hyperparathyroidism）、高血鈣及其治療藥物的相關知識，需辨別各選項的正確性。<br>(A) 錯誤，高血鈣最常見的病因是原發性副甲狀腺功能亢進及惡性腫瘤，兩者合計約佔90%，但維生素D缺乏通常造成低血鈣而非高血鈣；甲狀腺功能亢進（Hyperthyroidism）雖可輕度升高血鈣，但並非主要原因；Vitamin A中毒及脂肪壞死（Fat Necrosis）可造成高血鈣，但並非常見原因<br>(B) 正確，雙磷酸鹽（Bisphosphonates）抑制破骨細胞（Osteoclast）活性，可增加骨密度（Bone Mineral Density，BMD）；在治療惡性高血鈣時雙磷酸鹽確實可降低血鈣，但在慢性副甲狀腺功能亢進的治療中其降鈣作用短暫；擬鈣劑（Calcimimetics，如Cinacalcet）活化鈣敏感受體（Calcium-Sensing Receptor，CaSR）以減少PTH分泌並降低血鈣，主要用於次發性或三發性副甲狀腺功能亢進的血鈣控制，對骨密度的影響相對較小<br>(C) 錯誤，原發性副甲狀腺功能亢進（Primary Hyperparathyroidism，PHPT）無症狀病人建議手術的條件包括：年齡小於50歲（而非大於60歲）、血鈣大於正常值1 mg/dL以上、肌酸酐廓清率小於60 mL/min（而非50 mL/min）及腰椎骨密度T score小於-2.5等<br>(D) 錯誤，副甲狀腺手術後3至5天內血鈣可能低於正常值（Hungry Bone Syndrome，骨骼飢渴症候群），在骨骼疾病明顯的病人（如骨質疏鬆、骨溶蝕），術後低鈣血症可能嚴重且需要積極補鈣治療，並非「通常可以自動恢復、不需處理」<br>(E) 錯誤，抑鈣素（Calcitonin）抑制破骨細胞骨吸收的描述正確，但Calcitonin會促進（而非減少）腎臟的鈣排泄（促進尿鈣排出），有助於降低血鈣；且腦、腸胃及免疫系統有Calcitonin受體的描述基本正確，但整體選項中含有其他錯誤陳述",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10260"
   },
@@ -1831,7 +1831,7 @@
     "explanation": "本題考原發性醛固酮症（Primary Aldosteronism，PA）的流行病學、病因、臨床特徵及診斷注意事項。<br>(A) 錯誤，腎上腺腺瘤（Adrenal Adenoma，Conn's Syndrome）約佔PA的35至40%，雙側腎上腺增生（Bilateral Adrenal Hyperplasia）約佔60%，比例描述相反；雙側增生才是最常見的原因<br>(B) 正確，糖皮質類固醇可抑制性醛固酮增多症（Glucocorticoid-Remediable Aldosteronism，GRA）是一種常染色體顯性遺傳疾病，因CYP11B1（11β-hydroxylase基因）和CYP11B2（aldosterone synthase基因）發生重組，導致aldosterone的產生受ACTH（而非腎素Renin）調控，給予外源性糖皮質類固醇可抑制ACTH、進而減少aldosterone產生並降低血壓，符合正確描述<br>(C) 錯誤，雖然低血鉀是PA的典型表現，但研究顯示約50至60%的PA病人（而非80%）有低血鉀；許多PA病人血鉀可以正常，特別是雙側增生型<br>(D) 錯誤，PA病人因aldosterone過多造成胰島素阻抗及低血鉀（影響胰島素分泌），確實有增加第2型糖尿病風險；同時aldosterone過多也會增加破骨細胞活性造成骨質疏鬆風險，而非降低骨質疏鬆風險<br>(E) 錯誤，在篩查PA時，若病人沒有停用Beta-blocker（乙型阻斷劑），Beta-blocker會抑制腎素（Renin）使腎素偏低，可能造成ARR（Aldosterone-to-Renin Ratio）假性升高，反而應該懷疑ARR高的結果；若未停Beta-blocker而ARR低，才有一定的排除意義",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10261"
   },
@@ -1849,7 +1849,7 @@
     "explanation": "本題考嗜鉻細胞瘤（Pheochromocytoma）的臨床表現、診斷及流行病學，需辨別各選項的正確性。<br>(A) 正確，嗜鉻細胞瘤因過度分泌兒茶酚胺（Catecholamines），可造成多種臨床表現：多尿及多渴（因高血糖引起滲透性利尿）、姿勢性低血壓（因長期過度兒茶酚胺刺激造成血管容積減少及壓力感受器失靈）、高血糖（因兒茶酚胺抑制胰島素分泌並促進糖質新生）及高血鈣（因MEN 2A合併副甲狀腺功能亢進，或腫瘤分泌PTHrP）均是可能的臨床表現<br>(B) 錯誤，三環抗憂鬱劑（Tricyclic Antidepressants）會干擾兒茶酚胺的再攝取，可能誘發嗜鉻細胞瘤症狀發作，使尿液及血液中的甲腎上腺素（Metanephrines）偽陽性升高，造成假陽性（False Positive）而非假陰性（False Negative）；因此這些藥物會干擾診斷但方向相反<br>(C) 錯誤，嗜鉻細胞瘤的免疫組織化學染色特徵為Chromogranin陽性及Synaptophysin陽性（兩者均陽性），而非Synaptophysin陰性<br>(D) 錯誤，約25至40%（而非65%）的嗜鉻細胞瘤病人有遺傳相關的症候群（如MEN 2、VHL症候群、NF1、SDH突變等），遺傳相關病人發病年齡通常比偶發性者年輕<br>(E) 錯誤，嗜鉻細胞瘤在未注射顯影劑的電腦斷層（Unenhanced CT）中，其attenuation（CT值）通常大於10 HU（因含有豐富的血管及細胞成分）；而CT值小於10 HU是典型腎上腺腺瘤（Adrenal Adenoma）的特徵（因富含脂質），兩者描述相反",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10262"
   },
@@ -1867,7 +1867,7 @@
     "explanation": "本題考自體免疫性多發性內分泌症候群（Autoimmune Polyendocrine Syndrome，APS）各亞型的臨床特徵。APS-1（又稱APECED症候群）的特徵是發病年齡在童年（通常在5至10歲），而非30至40歲。<br>(A) 正確，各型APS多見內分泌功能低下；APS-1及APS-2均可見葛雷夫氏症（Graves' Disease）等甲狀腺功能亢進，雖然甲狀腺功能低下更常見，但Graves'disease確實可在兩型中出現<br>(B) 正確，APS-1常見皮膚黏膜念珠菌病（Mucocutaneous Candidiasis）；APS-2可表現乳糜瀉（Celiac Disease）等非內分泌自體免疫疾病，符合各亞型的非內分泌表現描述<br>(C) 錯誤，APS-1確實以慢性皮膚黏膜念珠菌病為最早的病徵，且各病徵之間可間隔數年，這部分正確；但APS-1的發病年齡通常在兒童期（5至15歲），而非30至40歲；30至40歲的發病年齡描述是錯誤的<br>(D) 正確，APS-2確實女性多於男性（約3:1）；APS-2病人對特定器官有自體免疫抗體，但通常沒有針對細胞激素（Cytokines，如interferon-α、interferon-ω）的抗體；對細胞激素的抗體是APS-1的特徵，此區別正確<br>(E) 正確，Ketoconazole治療念珠菌感染時，因其抑制類固醇合成酵素（Steroid Synthesis Enzymes）的副作用，在Addison's Disease（腎上腺功能不全）病人中可能誘發腎上腺危症（Adrenal Crisis），需要特別注意",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10263"
   },
@@ -1885,7 +1885,7 @@
     "explanation": "本題考各類降血糖藥物的作用機轉，需區分依賴胰島素機轉（Insulin-Dependent）與非胰島素機轉（Non-Insulin Dependent）的藥物。SGLT2抑制劑透過抑制腎臟近端腎小管的葡萄糖再吸收，直接增加尿糖排泄來降低血糖，完全不依賴胰島素的分泌或作用。<br>(A) 正確（非胰島素相關機轉），SGLT2抑制劑（如Empagliflozin、Dapagliflozin、Canagliflozin）透過抑制腎臟第2型鈉葡萄糖共同轉運蛋白（SGLT2），減少腎小管葡萄糖再吸收、增加尿糖排泄，降低血糖的機轉完全不依賴胰島素，屬於非胰島素相關機轉<br>(B) 錯誤（有胰島素相關），Metformin透過抑制肝臟糖質新生（Gluconeogenesis）及增加周邊胰島素敏感性（減少胰島素阻抗）發揮作用，與胰島素的作用有間接關聯<br>(C) 錯誤（有胰島素相關），Thiazolidinedione（TZD，如Pioglitazone）是PPAR-γ促效劑，透過增加周邊組織（脂肪、肌肉）的胰島素敏感性（Insulin Sensitizer）降低血糖，與胰島素作用直接相關<br>(D) 錯誤（有胰島素相關），GLP-1受體促效劑（GLP-1 RA，如Semaglutide、Liraglutide）透過刺激葡萄糖依賴性胰島素分泌（Glucose-Dependent Insulin Secretion）及抑制升糖素（Glucagon）分泌降低血糖，與胰島素分泌直接相關<br>(E) 錯誤（有胰島素相關），磺醯基尿素（Sulfonylurea，如Glibenclamide、Glipizide）透過刺激胰臟β細胞分泌胰島素降低血糖，是最直接促進胰島素分泌的藥物之一",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10264"
   },
@@ -1903,7 +1903,7 @@
     "explanation": "本題考各類降血糖藥物的副作用，特別是造成下肢水腫（Peripheral Edema）的機轉。TZD（如Pioglitazone）透過PPAR-γ活化促進脂肪細胞分化，同時增加腎臟集尿管的鈉水再吸收，導致水鈉滯留及下肢水腫，是最常造成下肢水腫的降血糖藥物。<br>(A) 錯誤，磺醯基尿素（Sulfonylurea）最主要的副作用為低血糖（Hypoglycemia）及體重增加，不會造成下肢水腫<br>(B) 錯誤，SGLT2抑制劑的機轉是促進尿糖及鈉的排泄，具有利尿及降低血壓的效果，反而可以減少水腫及心臟衰竭住院，不會造成下肢水腫<br>(C) 錯誤，Metformin的主要副作用為胃腸道不適（噁心、腹瀉）及罕見的乳酸酸中毒，不會造成下肢水腫<br>(D) 正確，TZD（Thiazolidinedione，如Pioglitazone）透過PPAR-γ活化增加腎臟集尿管對鈉及水的再吸收，導致水鈉滯留（Water and Sodium Retention），臨床上表現為下肢水腫及體重增加，這也是TZD在心臟衰竭病人中禁忌使用的原因<br>(E) 錯誤，DPP-4抑制劑的主要副作用為上呼吸道感染及少數病例的胰臟炎，不會造成下肢水腫",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10265"
   },
@@ -1921,7 +1921,7 @@
     "explanation": "本題考SGLT2抑制劑的藥理機轉、臨床效益及潛在副作用，重點在於SGLT2抑制劑與糖尿病酮酸中毒（Diabetic Ketoacidosis，DKA）的關係。<br>(A) 正確，SGLT2抑制劑使大量葡萄糖從尿液排泄，提供葡萄糖豐富的培養環境，會增加泌尿道感染（Urinary Tract Infection）及生殖器真菌感染（Genital Mycotic Infection）的風險<br>(B) 正確，臨床試驗（如EMPEROR-Reduced、DAPA-HF及EMPEROR-Preserved）顯示，SGLT2抑制劑對糖尿病及非糖尿病病人均可顯著降低心臟衰竭住院率，是心臟衰竭治療的重要突破<br>(C) 正確，SGLT2抑制劑可與胰島素合併使用以改善血糖控制，需注意合用時可能需要調整胰島素劑量，並監測SGLT2抑制劑相關的DKA風險<br>(D) 正確，糖尿病病人eGFR大於60 mL/min/1.73m²時可完整使用SGLT2抑制劑以達到降血糖效果；eGFR降低時降血糖效果減弱，但部分SGLT2抑制劑（如Dapagliflozin、Empagliflozin）在eGFR低至20至25時仍可用於心臟及腎臟保護目的<br>(E) 錯誤，SGLT2抑制劑實際上「增加」而非「降低」糖尿病酮酸中毒（DKA）的風險；SGLT2抑制劑促進腎糖排泄、降低血糖，但同時會促進升糖素分泌及增加脂肪分解與酮體產生；特別是「正常血糖性DKA（Euglycemic DKA）」是SGLT2抑制劑的特殊副作用，病人血糖可能僅輕度升高，但酮酸中毒已很嚴重，診斷困難且危險",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10266"
   },
@@ -1939,7 +1939,7 @@
     "explanation": "本題考反覆發作性低血糖（Recurrent Hypoglycemia）的鑑別診斷工作。病人空腹血糖76 mg/dL時，胰島素2.8 mIU/mL及C-peptide 2.2 ng/mL雖未明顯升高，但需要在確認低血糖發生時同步測量，才能判斷是否有內因性高胰島素血症（Endogenous Hyperinsulinism），如胰島素瘤（Insulinoma）；72小時延長禁食試驗是診斷胰島素瘤的黃金標準。<br>(A) 錯誤，腦下垂體磁振攝影（MRI）用於評估垂體瘤（如分泌ACTH的腺瘤造成Cushing's syndrome），本病人ACTH及Cortisol均正常，無Cushing's症候群的依據，不是優先檢查<br>(B) 錯誤，血中Chromogranin A升高見於神經內分泌腫瘤（Neuroendocrine Tumor，NET），雖然胰島素瘤也是NET的一種，但Chromogranin A並非胰島素瘤的確診依據，且並非優先的診斷步驟<br>(C) 錯誤，腹部電腦斷層（CT）用於胰島素瘤的定位診斷，但在未確認有胰島素瘤（功能性診斷）之前，不應先進行影像學定位，應先完成72小時禁食試驗確認功能性診斷後再安排定位影像<br>(D) 正確，72小時延長禁食試驗（72-Hour Prolonged Fasting Test）是診斷胰島素瘤（Insulinoma）的黃金標準，可在誘發低血糖發作時同步測量血糖、胰島素、C-peptide及Proinsulin，確認是否有不適當的高胰島素血症（C-peptide升高排除外源性胰島素注射），是此情境的優先診斷步驟<br>(E) 錯誤，下岩竇靜脈血液取樣（Inferior Petrosal Sinus Sampling，IPSS）用於分辨庫欣氏症候群（Cushing's Syndrome）中垂體依賴型與異位性ACTH分泌的鑑別，與本病人的低血糖評估無關",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10267"
   },
@@ -1957,7 +1957,7 @@
     "explanation": "本題考糖尿病、高血壓及高血脂治療藥物的相互作用、副作用及特殊注意事項，需辨別各組合中的錯誤陳述。由於題目未提供各編號的完整描述，以下依相關藥物的標準知識解析。<br>(A) 錯誤，此組合並非包含最多錯誤陳述的組合<br>(B) 錯誤，此組合並非包含最多錯誤陳述的組合<br>(C) 錯誤，此組合並非包含最多錯誤陳述的組合<br>(D) 錯誤，此組合並非包含最多錯誤陳述的組合<br>(E) 正確，此組合（3+4+5）包含了錯誤的陳述，例如：Statin與Fibrate（特別是Gemfibrozil）合用會顯著增加肌肉病變（Myopathy）風險的說法若描述成「安全合用」即錯誤；Thiazide利尿劑可能加重血糖控制若描述成「改善血糖」即錯誤；以及特定降壓藥物在妊娠禁忌的描述若有誤，均構成錯誤陳述組合",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10268"
   },
@@ -1975,7 +1975,7 @@
     "explanation": "本題考Metformin的藥理、副作用、禁忌及劑量。Metformin的每日最高核准使用劑量因地區而異，在許多國家為2550 mg（美國）或3000 mg（歐洲），而非2000 mg，2000 mg低估了最高劑量。<br>(A) 正確，Metformin長期使用可能透過競爭性抑制腸道維生素B12吸收，造成Vitamin B12的吸收不良（Malabsorption），需定期監測血清B12濃度<br>(B) 正確，eGFR小於30 mL/min/1.73m²時，Metformin在體內蓄積會增加乳酸酸中毒（Lactic Acidosis）的風險，應停止使用；eGFR 30至45之間需減量並謹慎使用<br>(C) 正確，大型臨床試驗（如糖尿病預防計劃 Diabetes Prevention Program）顯示，Metformin可使糖尿病前期（Prediabetes）病人發展為糖尿病的風險降低約31%<br>(D) 正確，Metformin相關乳酸酸中毒（Metformin-Associated Lactic Acidosis，MALA）雖然罕見（約0.01至0.08每1000人年），但文獻記載的死亡率確實高達約50%<br>(E) 錯誤，Metformin的每日最高使用劑量在美國核准為2550 mg（分次服用），在歐洲部分國家可達3000 mg，並非2000 mg；2000 mg低估了臨床上可使用的最高劑量",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10269"
   },
@@ -1993,7 +1993,7 @@
     "explanation": "本題考特定降血糖藥物在膀胱癌病人中的禁忌。TZD（特別是Pioglitazone）的長期使用已有流行病學研究顯示可能與膀胱癌風險增加有關，因此膀胱癌病人禁忌使用Pioglitazone。<br>(A) 正確（可使用），Metformin在膀胱癌病人中沒有禁忌，且部分研究甚至提示Metformin可能有抗癌效果<br>(B) 正確（可使用），SGLT2抑制劑在膀胱癌病人中無明確禁忌；早期有關Canagliflozin與膀胱癌的疑慮後來未被後續研究證實<br>(C) 正確（可使用），DPP-4抑制劑在膀胱癌病人中無明確禁忌，可正常使用<br>(D) 正確（不可使用），Thiazolidinedione（TZD，特別是Pioglitazone）長期使用（超過1年）的流行病學研究顯示與膀胱癌風險增加相關，因此有膀胱癌病史或現有膀胱癌的糖尿病病人禁忌使用Pioglitazone；美國FDA及歐洲EMA均發出警示<br>(E) 正確（可使用），Insulin glargine（基礎胰島素）在膀胱癌病人中無明確禁忌，可正常使用",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10270"
   },
@@ -2011,7 +2011,7 @@
     "explanation": "本題考低血糖（Hypoglycemia）的常見原因，需辨別各組合中哪些是導致低血糖的正確原因。由於題目未提供各編號的完整描述，以下依低血糖的標準病因學解析。<br>(A) 錯誤，此組合並非最正確的低血糖病因組合<br>(B) 錯誤，此組合並非最正確的低血糖病因組合<br>(C) 錯誤，此組合並非最正確的低血糖病因組合<br>(D) 錯誤，此組合並非最正確的低血糖病因組合<br>(E) 正確，此組合（1+3+4）包含了正確的低血糖原因，包括：胰島素瘤（Insulinoma，內因性高胰島素血症）、腎上腺功能不全（Adrenal Insufficiency，皮質醇缺乏導致低血糖）及肝衰竭（Hepatic Failure，肝糖儲備及糖質新生能力喪失）等，均是導致低血糖的重要非糖尿病相關原因",
     "tags": [
       "113",
-      "新陳代謝科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10271"
   },
@@ -2083,7 +2083,7 @@
     "explanation": "本題考自體免疫甲狀腺疾病（Autoimmune Thyroid Disease，AITD）的診斷性抗體。AITD主要包括橋本氏甲狀腺炎（Hashimoto's Thyroiditis）及葛雷夫氏症（Graves' Disease），最常用的診斷抗體組合為抗甲狀腺球蛋白抗體（Anti-Thyroglobulin Antibody，TgAb）及抗甲狀腺過氧化酶抗體（Anti-Thyroid Peroxidase Antibody，TPO Ab）。<br>(A) 錯誤，TPO Ab加ANA（抗核抗體）的組合：ANA並非甲狀腺特異性抗體，雖然橋本氏甲狀腺炎病人ANA陽性率較高，但ANA不是AITD的標準診斷性抗體<br>(B) 錯誤，TgAb加Anti-dsDNA（抗雙股DNA抗體）的組合：Anti-dsDNA是系統性紅斑狼瘡（SLE）的特異性抗體，不是AITD的診斷性抗體<br>(C) 正確，TgAb及TPO Ab是診斷AITD（特別是橋本氏甲狀腺炎）最常用的兩種自體抗體；TPO Ab敏感度較高（在橋本氏甲狀腺炎陽性率達95%），TgAb特異度較高，兩者合用可提高診斷效益<br>(D) 錯誤，TSH受體抗體（TSHR Ab，又稱促甲狀腺素受體抗體 Thyrotropin Receptor Antibody，TRAb）是葛雷夫氏症（Graves' Disease）的特異性抗體，與TPO Ab的組合主要用於評估甲狀腺功能亢進而非整體AITD，且TSHR Ab並非橋本氏甲狀腺炎的主要診斷工具<br>(E) 錯誤，TSHR Ab加Anti-RNP抗體的組合：Anti-RNP是混合性結締組織病（Mixed Connective Tissue Disease，MCTD）的特異性抗體，不是AITD的標準診斷性抗體",
     "tags": [
       "113",
-      "內分泌科"
+      "內分泌及新陳代謝科"
     ],
     "group_id": "group_10275"
   },
