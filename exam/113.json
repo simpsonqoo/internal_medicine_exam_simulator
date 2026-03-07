@@ -2598,8 +2598,8 @@
     "group_id": "group_10302"
   },
   {
-    "id": 113005,
-    "question": "5. Durvalumab與PD-L1",
+    "id": 113144,
+    "question": "癌症的免疫節制點抑制劑(immune checkpoint inhibitors, ICIs)通常針對特定的免疫節制點進行抑制，逆轉癌細胞對T cells之免疫Evasion，重回免疫Elimination，以達到治療癌症的目的，有關”免疫治療藥劑”與免疫免疫節制分子的配對，下列那些為真?<br>1. Ipilimumab與CTLA-4<br>2. Atezolizumab與PD-1<br>3. Pembrolizumab與PD-1<br>4. Nivolumab與PD-L1<br>5. Durvalumab與PD-L1",
     "options": {
       "A": "1、5 only。",
       "B": "1、3、5 only。",
