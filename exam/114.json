@@ -618,6 +618,9 @@
       "114",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/114-34.jpg"
+    ],
     "group_id": "group_10033"
   },
   {
@@ -654,6 +657,9 @@
       "114",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/114-36.jpg"
+    ],
     "group_id": "group_10035"
   },
   {
@@ -672,9 +678,7 @@
       "114",
       "消化科"
     ],
-    "images": [
-          "./exam/image/114-37.jpg"
-    ],
+
     "group_id": "group_10036"
   },
   {
