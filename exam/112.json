@@ -15,6 +15,10 @@
       "112",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/112-1-1.jpg",
+          "./exam/image/112-1-2.jpg"
+    ],
     "group_id": "group_10320"
   },
   {
@@ -32,6 +36,10 @@
     "tags": [
       "112",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/112-2-1.jpg",
+          "./exam/image/112-2-2.jpg"
     ],
     "group_id": "group_10321"
   },
@@ -51,6 +59,11 @@
       "112",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/112-3-1.jpg",
+          "./exam/image/112-3-2.jpg",
+          "./exam/image/112-3-2.jpg"
+    ],
     "group_id": "group_10322"
   },
   {
@@ -68,6 +81,10 @@
     "tags": [
       "112",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/112-4-1.jpg",
+          "./exam/image/112-4-2.jpg"
     ],
     "group_id": "group_10323"
   },
@@ -249,6 +266,9 @@
       "112",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/112-14.jpg"
+    ],
     "group_id": "group_10333"
   },
   {
@@ -267,6 +287,9 @@
       "112",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/112-15.jpg"
+    ],
     "group_id": "group_10334"
   },
   {
@@ -284,6 +307,9 @@
     "tags": [
       "112",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/112-16.jpg"
     ],
     "group_id": "group_10335"
   },
@@ -519,6 +545,9 @@
       "112",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/112-29.jpg"
+    ],
     "group_id": "group_10348"
   },
   {
@@ -536,6 +565,9 @@
     "tags": [
       "112",
       "胸腔科"
+    ],
+    "images": [
+          "./exam/image/112-30.jpg"
     ],
     "group_id": "group_10349"
   },
@@ -572,6 +604,9 @@
     "tags": [
       "112",
       "胸腔科"
+    ],
+    "images": [
+          "./exam/image/112-32.jpg"
     ],
     "group_id": "group_10351"
   },
@@ -626,6 +661,9 @@
     "tags": [
       "112",
       "胸腔科"
+    ],
+    "images": [
+          "./exam/image/112-35.jpg"
     ],
     "group_id": "group_10354"
   },
@@ -825,6 +863,9 @@
       "112",
       "消化科"
     ],
+    "images": [
+          "./exam/image/112-46.jpg"
+    ],
     "group_id": "group_10365"
   },
   {
@@ -968,6 +1009,9 @@
     "tags": [
       "112",
       "消化科"
+    ],
+    "images": [
+          "./exam/image/112-54.jpg"
     ],
     "group_id": "group_10373"
   },
@@ -2841,6 +2885,9 @@
       "112",
       "內分泌及新陳代謝科"
     ],
+    "images": [
+          "./exam/image/112-158.jpg"
+    ],
     "group_id": "group_10477"
   },
   {
@@ -2859,6 +2906,10 @@
       "112",
       "皮膚科"
     ],
+    "images": [
+          "./exam/image/112-159-1.jpg",
+          "./exam/image/112-159-2.jpg"
+    ],
     "group_id": "group_10478"
   },
   {
@@ -2876,6 +2927,9 @@
     "tags": [
       "112",
       "皮膚科"
+    ],
+    "images": [
+          "./exam/image/112-160.jpg"
     ],
     "group_id": "group_10479"
   }
