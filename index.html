@@ -1476,6 +1476,9 @@
             if (countDiv) countDiv.style.display = 'none';
           });
           allSubjectsCount.style.display = 'block';
+          const selectedYears = getSelectedYears();
+          const defaultCount = (selectedYears.length === 1 && selectedYears[0] === '109') ? 200 : 160;
+          allSubjectsCount.querySelector('input').value = defaultCount;
         } else {
           subjectCheckboxes.forEach(cb => {
             cb.checked = false;
@@ -1516,8 +1519,10 @@
       let subjectCounts = [];
       
       if (isAllSelected) {
-        const totalCountInput = document.querySelector('#count-internalmed-all-subjects input');
-        totalCount = parseInt(totalCountInput.value) || 160;
+          const totalCountInput = document.querySelector('#count-internalmed-all-subjects input');
+          const selectedYears = getSelectedYears();
+          const defaultCount = (selectedYears.length === 1 && selectedYears[0] === '109') ? 200 : 160;
+          totalCount = parseInt(totalCountInput.value) || defaultCount;
       } else {
         subjectCounts = subjects.map(subject => {
           const countInput = document.querySelector(`#count-internalmed-${subject} input`);
