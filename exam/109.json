@@ -123,6 +123,11 @@
       "109",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/109-7-1.jpg",
+          "./exam/image/109-7-2.jpg",
+          "./exam/image/109-7-3.jpg"
+    ],
     "group_id": "group_10806"
   },
   {
@@ -140,6 +145,11 @@
     "tags": [
       "109",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/109-8-1.jpg",
+          "./exam/image/109-8-2.jpg",
+          "./exam/image/109-8-3.jpg"
     ],
     "group_id": "group_10807"
   },
@@ -285,6 +295,9 @@
       "109",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/109-16.jpg"
+    ],
     "group_id": "group_10815"
   },
   {
@@ -356,6 +369,9 @@
     "tags": [
       "109",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/109-20.jpg"
     ],
     "group_id": "group_10819"
   },
@@ -537,6 +553,9 @@
       "109",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/109-30.jpg"
+    ],
     "group_id": "group_10829"
   },
   {
@@ -572,6 +591,9 @@
     "tags": [
       "109",
       "胸腔科"
+    ],
+    "images": [
+          "./exam/image/109-32.jpg"
     ],
     "group_id": "group_10831"
   },
@@ -1005,6 +1027,9 @@
       "109",
       "消化科"
     ],
+    "images": [
+          "./exam/image/109-56.jpg"
+    ],
     "group_id": "group_10855"
   },
   {
@@ -1023,6 +1048,9 @@
       "109",
       "消化科"
     ],
+    "images": [
+          "./exam/image/109-57.jpg"
+    ],
     "group_id": "group_10856"
   },
   {
@@ -1040,6 +1068,9 @@
     "tags": [
       "109",
       "消化科"
+    ],
+    "images": [
+          "./exam/image/109-58.jpg"
     ],
     "group_id": "group_10857"
   },
@@ -1094,6 +1125,9 @@
     "tags": [
       "109",
       "消化科"
+    ],
+    "images": [
+          "./exam/image/109-61.jpg"
     ],
     "group_id": "group_10860"
   },
@@ -1167,6 +1201,9 @@
       "109",
       "消化科"
     ],
+    "images": [
+          "./exam/image/109-65.jpg"
+    ],
     "group_id": "group_10864"
   },
   {
@@ -1238,6 +1275,9 @@
     "tags": [
       "109",
       "腎臟科"
+    ],
+    "images": [
+          "./exam/image/109-69.jpg"
     ],
     "group_id": "group_10868"
   },
@@ -2878,5 +2918,734 @@
       "血液科"
     ],
     "group_id": "group_10959"
+  },
+  {
+    "id": 109161,
+    "question": "161. 一位65歲女性病人抽血檢查發現Hb為19.5 gm/dL，Hct 58.5%，WBC 15400/μL，platelet 435000/μL。以 下何種基因突變可幫忙診斷此病人得了真性紅血球增多症(PV)？",
+    "options": {
+      "A": "BCR/ABL fusion",
+      "B": "ASXL1",
+      "C": "CALR",
+      "D": "JAK2",
+      "E": "RUNX1"
+    },
+    "answer": "D",
+    "explanation": "本題考真性紅血球增多症（Polycythemia Vera，PV）的分子診斷標記。PV是骨髓增殖性腫瘤（Myeloproliferative Neoplasm，MPN）的一種，以紅血球過度增生為主要特徵，合併白血球及血小板增多。<br>(A) 錯誤，BCR/ABL融合基因是慢性骨髓性白血病（Chronic Myeloid Leukemia，CML）的特徵性染色體易位（費城染色體 Philadelphia Chromosome），與PV無直接關聯<br>(B) 錯誤，ASXL1突變見於多種骨髓惡性腫瘤（如MDS、MPN、AML），是不良預後標記，但並非PV的診斷性突變<br>(C) 錯誤，CALR（Calreticulin，鈣網蛋白）突變是原發性血小板增多症（Essential Thrombocythemia，ET）及原發性骨髓纖維化（Primary Myelofibrosis，PMF）中JAK2 V617F陰性病人的重要突變，PV幾乎不見CALR突變<br>(D) 正確，JAK2 V617F突變（Janus Kinase 2 exon 14突變）是PV的最重要診斷標記，約95至97%的PV病人攜帶此突變；其餘約3%的PV病人攜帶JAK2 exon 12突變；依WHO 2022年MPN診斷標準，JAK2 V617F或JAK2 exon 12突變是PV的主要診斷標準（Major Criterion）之一<br>(E) 錯誤，RUNX1突變或RUNX1::RUNX1T1融合基因與急性骨髓性白血病（AML）相關，特別是t(8；21)的AML，與PV無關",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10960"
+  },
+  {
+    "id": 109162,
+    "question": "162. Daratumumab已有健保給付作為治療多發性骨髓瘤的藥物，其作用機轉為何？",
+    "options": {
+      "A": "Anti-CD38 antibody",
+      "B": "Anti-CD20 antibody",
+      "C": "Anti-CD138 antibody",
+      "D": "Proteosome inhibitor",
+      "E": "Histone deacetylase inhibitor"
+    },
+    "answer": "A",
+    "explanation": "本題考Daratumumab的作用機轉。Daratumumab是第一個核准用於多發性骨髓瘤（Multiple Myeloma，MM）的人源化單株抗體（Humanized Monoclonal Antibody）。<br>(A) 正確，Daratumumab是針對CD38（ADP-核糖環化酶，高度表達於骨髓瘤細胞表面）的人源化IgG1κ單株抗體；其作用機轉包括：抗體依賴性細胞毒殺（Antibody-Dependent Cellular Cytotoxicity，ADCC）、補體依賴性細胞毒殺（Complement-Dependent Cytotoxicity，CDC）、抗體依賴性吞噬（Antibody-Dependent Phagocytosis，ADCP）及直接誘導凋亡（Direct Apoptosis），是MM治療的重要突破<br>(B) 錯誤，Anti-CD20抗體是Rituximab（利妥昔單抗）的作用標靶，CD20表達於B細胞淋巴瘤，與MM無關<br>(C) 錯誤，CD138（Syndecan-1）雖高度表達於骨髓瘤細胞，但目前無已核准的Anti-CD138商業化單株抗體用於臨床（Indatuximab Ravtansine尚在試驗階段）<br>(D) 錯誤，蛋白酶體抑制劑（Proteasome Inhibitor，如Bortezomib、Carfilzomib）是MM的另一類重要治療藥物，但並非Daratumumab的作用機轉<br>(E) 錯誤，組蛋白去乙醯酶抑制劑（Histone Deacetylase Inhibitor，HDAC inhibitor，如Panobinostat）是MM的輔助治療選項，並非Daratumumab的機轉",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10961"
+  },
+  {
+    "id": 109163,
+    "question": "163. 一位慢性關節炎患者抽血檢查顯示有貧血，經詳細檢查排除其他原因後，被診斷為慢性疾患造成的貧 血(anemia of chronic disease)，下列何者與此診斷不符合？",
+    "options": {
+      "A": "Microcytic anemia",
+      "B": "Low serum iron",
+      "C": "Normal or high serum ferritin",
+      "D": "Increased iron stores",
+      "E": "Decreased hepcidin production"
+    },
+    "answer": "E",
+    "explanation": "本題考慢性疾病貧血（Anemia of Chronic Disease，ACD，又稱發炎性貧血 Anemia of Inflammation，AI）的病理生理學。ACD的核心機轉是發炎細胞激素（特別是IL-6）刺激肝臟分泌鐵調素（Hepcidin）增加，Hepcidin抑制腸道鐵吸收及巨噬細胞鐵釋放，導致功能性鐵缺乏。<br>(A) 錯誤（符合ACD），ACD通常表現為正球性貧血（Normocytic Anemia），但部分病人（約25至30%）可表現為小球性貧血（Microcytic Anemia），因此Microcytic Anemia可與ACD並存<br>(B) 錯誤（符合ACD），低血清鐵（Low Serum Iron）是ACD的典型表現，因Hepcidin增加抑制鐵從巨噬細胞釋放入血，血清鐵降低<br>(C) 錯誤（符合ACD），血清Ferritin正常或升高（Normal or High Serum Ferritin）是ACD的重要特徵，可與缺鐵性貧血（IDA）鑑別（IDA的Ferritin降低）；發炎狀態下Ferritin作為急性期蛋白（Acute Phase Protein）本身即會升高<br>(D) 錯誤（符合ACD），鐵儲存增加（Increased Iron Stores）是ACD的特徵，因巨噬細胞內儲存的鐵增多（Hepcidin阻止鐵釋出），骨髓巨噬細胞（Reticuloendothelial System）中鐵豐富，但這些鐵無法有效用於紅血球製造<br>(E) 正確（與ACD不符），ACD的病理生理機轉恰好是Hepcidin「增加」（Increased Hepcidin Production），而非減少；IL-6等發炎細胞激素刺激肝臟大量產生Hepcidin，是ACD鐵代謝異常的核心機轉；「Hepcidin減少」是缺鐵性貧血（IDA）的表現，與ACD的描述相反",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10962"
+  },
+  {
+    "id": 109164,
+    "question": "164. Double-hit彌漫性大B細胞淋巴瘤(DLBCL)預後很差，這些病人的淋巴瘤細胞有那兩個基因重組？",
+    "options": {
+      "A": "MYC, BCL2",
+      "B": "BCL2, BCL6",
+      "C": "MYC, MCL1",
+      "D": "BCL2, MCL1",
+      "E": "MYC, BCL1"
+    },
+    "answer": "A",
+    "explanation": "本題考雙重打擊淋巴瘤（Double-Hit Lymphoma，DHL）的分子遺傳學特徵。DHL是高侵襲性B細胞淋巴瘤的一種，預後極差，因同時攜帶兩種特定的染色體易位。<br>(A) 正確，Double-Hit DLBCL最常見的基因重組組合為MYC重排（通常為t(8；14)）合併BCL2重排（通常為t(14；18)），約佔DHL的80%；MYC促進細胞增殖，BCL2抑制細胞凋亡，兩者同時異常導致腫瘤細胞極度惡性且對標準R-CHOP化療反應差；DHL屬於WHO 2022分類中的「High-Grade B-Cell Lymphoma with MYC and BCL2 Rearrangements」<br>(B) 錯誤，BCL2加BCL6的重排組合屬於部分的Triple-Hit淋巴瘤的成分之一，而非標準Double-Hit DLBCL的定義組合；DHL定義必須包含MYC重排<br>(C) 錯誤，MYC加MCL1組合並非DHL的標準定義；MCL1是另一個抗凋亡蛋白，但其重排並不構成DHL的診斷標準<br>(D) 錯誤，BCL2加MCL1組合不含MYC重排，不符合DHL定義<br>(E) 錯誤，BCL1（CCND1，Cyclin D1）是套細胞淋巴瘤（Mantle Cell Lymphoma，MCL）的特徵性基因，t(11；14)/BCL1重排與MCL相關，而非DHL",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10963"
+  },
+  {
+    "id": 109165,
+    "question": "165. 下列標靶治療與疾病的配對何者是錯誤的？",
+    "options": {
+      "A": "Eltrombopag- Immune thrombocytopenic purpura",
+      "B": "Rituximab- B-cell lymphoma",
+      "C": "Brentuximab- Hodgkin’s lymphoma",
+      "D": "Ibrutinib- Multiple myeloma",
+      "E": "Imatinib- Chronic myeloid leukemia"
+    },
+    "answer": "D",
+    "explanation": "本題考各類血液惡性腫瘤標靶治療藥物的核准適應症配對。<br>(A) 正確，Eltrombopag是口服血小板生成素受體促效劑（Thrombopoietin Receptor Agonist，TPO-RA），核准用於免疫性血小板低下症（Immune Thrombocytopenic Purpura，ITP）及再生不良性貧血（Aplastic Anemia）的治療<br>(B) 正確，Rituximab是Anti-CD20單株抗體，核准用於CD20陽性B細胞淋巴瘤（B-Cell Lymphoma），包括DLBCL、濾泡型淋巴瘤等<br>(C) 正確，Brentuximab Vedotin是Anti-CD30抗體藥物複合物（Antibody-Drug Conjugate，ADC），核准用於霍奇金淋巴瘤（Hodgkin's Lymphoma）及系統性間變性大細胞淋巴瘤（ALCL）<br>(D) 正確（此項為錯誤配對），Ibrutinib是Bruton酪氨酸激酶抑制劑（BTK Inhibitor），主要核准適應症為慢性淋巴球性白血病（Chronic Lymphocytic Leukemia，CLL）、套細胞淋巴瘤（Mantle Cell Lymphoma，MCL）及Waldenström巨球蛋白血症（WM）等B細胞惡性腫瘤；多發性骨髓瘤（Multiple Myeloma，MM）不是Ibrutinib的標準核准適應症（MM為漿細胞腫瘤，BTK路徑在其中不如前述B細胞惡性腫瘤重要）<br>(E) 正確，Imatinib（伊馬替尼）是第一代BCR-ABL及c-KIT酪氨酸激酶抑制劑（TKI），核准用於慢性骨髓性白血病（Chronic Myeloid Leukemia，CML）及KIT陽性胃腸道間質瘤（GIST）的治療",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10964"
+  },
+  {
+    "id": 109166,
+    "question": "166. 下列有關輸血相關之急性肺損傷(Transfusion-related acute lung injury)的敘述何者有誤？",
+    "options": {
+      "A": "發生原因多為捐血者體內有高濃度之Anti-HLA class II 抗體",
+      "B": "一般發生於輸血後24小時",
+      "C": "病人有缺氧現象",
+      "D": "會出現肺水腫",
+      "E": "輸注男性或未曾懷孕婦女的血可減少發生機率"
+    },
+    "answer": "B",
+    "explanation": "本題考輸血相關急性肺損傷（TRALI）的定義、發生機轉、臨床表現及預防策略。<br>(A) 正確，TRALI的發生原因多與捐血者（供血者）體內存在高濃度的HLA抗體（特別是Anti-HLA Class I及Class II抗體）或Anti-HNA（Human Neutrophil Antigen，人類嗜中性球抗原）抗體相關；這些抗體與受血者的白血球或嗜中性球結合後活化，造成肺部微血管內皮損傷及急性肺損傷<br>(B) 正確（此項為錯誤），TRALI的定義是輸血開始後「6小時以內」出現急性低氧血症（PaO₂/FiO₂小於300 mmHg）及非心源性肺水腫（雙側肺浸潤）；「24小時」是診斷TACO（輸血相關循環超載 Transfusion-Associated Circulatory Overload）的參考時間框架，而非TRALI的定義；TRALI通常在輸血後「1至2小時內」最為常見，最遲在6小時內發生<br>(C) 正確，TRALI的核心臨床表現為急性缺氧（Hypoxia），需要氧氣補充或機械通氣支持<br>(D) 正確，TRALI可見非心源性肺水腫（Non-Cardiogenic Pulmonary Edema），即ARDS樣表現，影像學顯示雙側肺浸潤而無左心衰竭依據<br>(E) 正確，由於TRALI主要與多次懷孕婦女（多次妊娠後產生Anti-HLA抗體）的血液製品相關，使用男性捐血者或未曾懷孕女性捐血者的血漿可顯著降低TRALI發生率；這也是許多血庫改變血漿（FFP）供應策略的依據",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10965"
+  },
+  {
+    "id": 109167,
+    "question": "167. 一位75歲男士，過去無特殊病史，在例行抽血檢查時發現Hb 9.2 gm/dL，WBC 2600/μL，blasts 2%，segmented neutrophils 35%，monocytes 8%，lymphocytes 55%，血小板23000/μL；骨髓檢查顯 示造血細胞化生不良(dysplasia)，blasts 9%，染色體為複雜變化。此病人最適當的治療為何？",
+    "options": {
+      "A": "Packed RBC transfusion",
+      "B": "Platelet concentrate transfusion",
+      "C": "Erythropoietin",
+      "D": "Azacitidine",
+      "E": "Allogeneic hematopoietic stem cell transplantation"
+    },
+    "answer": "D",
+    "explanation": "本題考骨髓化生不良症候群（Myelodysplastic Syndrome，MDS）的診斷分類及治療選擇。本病人骨髓blasts 9%（介於5至19%之間，符合MDS伴原始細胞增多型 MDS-EB，即MDS with Excess Blasts），合併複雜染色體異常（Complex Karyotype，3種以上染色體異常），屬於高風險MDS（High-Risk MDS，IPSS-R積分高）。<br>(A) 錯誤，單純輸注紅血球（Packed RBC Transfusion）是症狀性處置，無法改變疾病進程，不是高風險MDS的適當積極治療<br>(B) 錯誤，輸注血小板（Platelet Concentrate Transfusion）同樣只是症狀支持治療，血小板23000/μL可輸血小板預防出血，但不是主要治療<br>(C) 錯誤，促紅血球生成素（Erythropoietin，EPO）適用於低風險MDS病人的貧血管理，不適用於高風險MDS；且複雜染色體的高風險MDS對EPO反應差<br>(D) 正確，Azacitidine（5-Azacytidine，去甲基化藥物 Hypomethylating Agent，HMA）是高風險MDS（IPSS-R中高風險以上）的標準一線治療，可延長高風險MDS病人的整體存活期；對於不適合異體幹細胞移植的老年高風險MDS病人（如本病人75歲），Azacitidine是最適當的選擇<br>(E) 錯誤，異體造血幹細胞移植（Allogeneic HSCT）是唯一有潛力治癒高風險MDS的方法，但因本病人75歲，年齡偏高，移植相關死亡率（Treatment-Related Mortality，TRM）風險極高，通常不建議作為高齡病人的優先選擇（移植年齡上限通常為65至70歲，視體能狀況而定）",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10966"
+  },
+  {
+    "id": 109168,
+    "question": "168. Cryoprecipitate中帶有那些凝血因子？",
+    "options": {
+      "A": "(1)",
+      "B": "(2)",
+      "C": "(1)+(3)",
+      "D": "(1)+(3)+(4)",
+      "E": "(1)+(2)+(3)"
+    },
+    "answer": "D",
+    "explanation": "本題考冷沉澱物（Cryoprecipitate）的成分組成。Cryoprecipitate是新鮮冷凍血漿（FFP）在1至6°C緩慢融解後沉澱的蛋白質，富含特定凝血因子。由於題目未提供各編號的完整描述，以下依Cryoprecipitate的標準成分解析。<br>(D) 正確，Cryoprecipitate主要含有以下凝血相關成分：纖維蛋白原（Fibrinogen，Factor I）、第VIII因子（Factor VIII）、von Willebrand因子（vWF）及第XIII因子（Factor XIII）；此組合（1+3+4）最可能對應這些成分；需注意Cryoprecipitate不含第IX因子（Factor IX），B型血友病（Hemophilia B）需使用Factor IX濃縮製劑，而非Cryoprecipitate",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10967"
+  },
+  {
+    "id": 109169,
+    "question": "169. 一位55歲男士過去無特殊病史，因呼吸急促及皮膚瘀青應診，身體檢查無肝脾腫大，體溫正常。抽血檢查顯示Hb 7.8 gm/dL，WBC 1250/μL，neutrophils 20%，monocytes 6%，lymphocytes 74%，血小板13000/μL；肝腎功能正常，血清鐵、維化命B12及葉酸值正常；骨髓檢查顯示造血細胞佔有核細胞之10%，blasts百分比正常，無化生不良(dysplasia) 變化，此時最適當的治療為何？",
+    "options": {
+      "A": "(1)",
+      "B": "(2)",
+      "C": "(2)+(3)",
+      "D": "(1)+(4)",
+      "E": "(2)+(3)+(4)"
+    },
+    "answer": "C",
+    "explanation": "本題考嚴重再生不良性貧血（Severe Aplastic Anemia，SAA）的診斷及治療。本病人骨髓造血細胞僅佔10%（嚴重低增生性骨髓，正常應大於30%）、無dysplasia、無blasts增加，且三系血球均嚴重減少（Hb 7.8 g/dL、嗜中性球絕對值極低、血小板13000/μL），符合SAA的診斷標準。由於題目未提供各編號的完整描述，以下依SAA標準治療解析。<br>(C) 正確，SAA的標準治療依年齡及是否有合適捐贈者決定：年輕病人（通常小於40歲）且有HLA配對的同胞捐贈者首選異體造血幹細胞移植（Allogeneic HSCT）；本病人55歲，若無合適配對捐贈者，標準治療為免疫抑制療法（Immunosuppressive Therapy，IST），包含抗胸腺細胞球蛋白（Antithymocyte Globulin，ATG）加環孢靈（Cyclosporine），此組合（2+3）最可能代表ATG及Cyclosporine，是55歲SAA病人無合適捐贈者時的標準治療選擇；此外促血小板生成素受體促效劑Eltrombopag（TPO-RA）現已加入SAA的一線IST中以提高緩解率",
+    "tags": [
+      "109",
+      "血液科"
+    ],
+    "group_id": "group_10968"
+  },
+  {
+    "id": 109170,
+    "question": "170. 一68歲男性病人，診斷罹患乙狀結腸癌(adenocarcinoma, sigmoid colon)，以根治性手術切除左側乙狀結 腸與淋巴結廓清術，病理組織確定手術邊緣沒有癌細胞，清除淋巴結共25顆中病理檢查有6顆已有癌細 胞，沒有遠處器官轉移，醫師建議手術後進行6個月化學治療以降低復發率與增加存活。各種臨床指引均 一致建議之最適合之輔助性(adjuvant)治療處方為何者？",
+    "options": {
+      "A": "Irinotecan added to 5-FU and Leucovorin (FOLFIRI)",
+      "B": "Oxaliplatin added to 5-FU and Leucovorin (FOLFOX)",
+      "C": "Bevacizumab added to FOLFOX",
+      "D": "Cetuximab added to FOLFOX",
+      "E": "Panitumumab added to FOLFOX"
+    },
+    "answer": "B",
+    "explanation": "本題考大腸直腸癌（Colorectal Cancer，CRC）術後輔助化療（Adjuvant Chemotherapy）的標準方案。本病人為第三期大腸癌（Stage III，即T-N1-2-M0，有淋巴結轉移但無遠端轉移），且有6顆淋巴結轉移（N2b），屬於Stage IIIC，是輔助化療最明確的適應症。<br>(A) 錯誤，FOLFIRI（Irinotecan加5-FU及Leucovorin）是大腸癌第一線轉移性治療的選擇，在CRC術後輔助化療中，Irinotecan加5-FU的組合（FOLFIRI或IFL）並未被臨床試驗（如PETACC-3、BICC-C等）證實優於單純5-FU/LV或FOLFOX，因此不是術後輔助化療的指引建議方案<br>(B) 正確，FOLFOX（Oxaliplatin加5-FU及Leucovorin）或其口服類似方案CAPOX（Oxaliplatin加Capecitabine）是第三期大腸癌術後輔助化療的國際指引（NCCN、ESMO、ASCO）一致推薦的標準方案；多個大型試驗（如MOSAIC試驗）證實FOLFOX顯著優於單純5-FU/LV，可降低復發率及改善整體存活<br>(C) 錯誤，Bevacizumab（Anti-VEGF抗體）在術後輔助化療的角色尚無充分證據支持，臨床試驗（如AVANT、NSABP C-08）未能顯示Bevacizumab加入輔助化療可改善預後，不是指引建議<br>(D) 錯誤，Cetuximab（Anti-EGFR抗體）在輔助化療中同樣未能證實有益，PETACC-8及N0147試驗均顯示Cetuximab加入FOLFOX用於術後輔助化療無法改善預後，即使是RAS野生型病人也無益<br>(E) 錯誤，Panitumumab（Anti-EGFR抗體）同樣在術後輔助化療中無充分臨床試驗支持，不是指引建議的術後輔助化療方案",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10969"
+  },
+  {
+    "id": 109171,
+    "question": "171. 癌症病人的處理評估，體能狀態(Performance status, PS) 是一個重要的常用指標。體能狀態的評估有一 個沿用多年的指標Karnofsky performance status (KPS)。今有一位60歲癌症病人，他日常生活完全可以 自理(self-care)，不需人幫忙。但是他已沒有辦法正常的工作(active work)，也沒有辦法參加正常活 動（normal activity)。醫師估計這樣的病人KPS約為幾分？",
+    "options": {
+      "A": "KPS 90",
+      "B": "KPS 80",
+      "C": "KPS 70",
+      "D": "KPS 60",
+      "E": "KPS 50"
+    },
+    "answer": "C",
+    "explanation": "本題考卡諾夫斯基體能狀態評分（Karnofsky Performance Status，KPS）的標準定義。KPS為100至0分，每10分一個等級，評估癌症病人的整體功能狀態。<br>KPS各分級的定義：KPS 100分為完全正常、無任何症狀；KPS 90分為正常活動，有輕微症狀；KPS 80分為勉強可正常活動，有一些症狀；KPS 70分為可自我照顧，但無法從事正常活動或積極工作；KPS 60分為偶爾需要幫助，但大多數個人需求可自理；KPS 50分為需要相當幫助及頻繁醫療照顧；KPS 40分為殘疾，需特殊照顧及幫助；KPS 30分為嚴重殘疾，有住院指征，雖暫時不致命；KPS 20分為非常病重，住院支持性治療；KPS 10分為垂危。<br>(A) 錯誤，KPS 90對應「正常活動，有輕微症狀」，尚可正常工作但有些不適<br>(B) 錯誤，KPS 80對應「需努力才能維持正常活動，有一些症狀」，仍可部分參與工作<br>(C) 正確，KPS 70對應「可自我照顧（Self-Care），但無法從事正常活動（Normal Activity）或積極工作（Active Work）」，完全符合本病人的描述：日常生活完全可以自理、但無法正常工作或參加正常活動<br>(D) 錯誤，KPS 60對應「偶爾需要幫助，但大多數個人需求可自理」，已有部分依賴他人協助<br>(E) 錯誤，KPS 50對應「需要相當程度的幫助及頻繁的醫療照顧」，已明顯依賴他人",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10970"
+  },
+  {
+    "id": 109172,
+    "question": "172. 一位70歲男性病人，突然因意識混亂(confusion)被家人送至急診室。生命徵象(TPR與血壓)大致穩定，並 沒有局部神經學徵象。初步抽血檢查發現血清鈣數值3.55mmol/L (14.2mg/dL)，BUN與Cre數值輕微上 升。胸部X光攝影(CXR)發現兩側肺野有多發肺結節(nodules)，高度懷疑是轉移的惡性腫瘤。之後的實驗 室檢查顯示PTH-rP (parathyroid hormone-related protein)數值明顯上升。下列的高血鈣症之處置最\"不\"需 要？",
+    "options": {
+      "A": "Normal saline",
+      "B": "Pamidronate",
+      "C": "Furosemide",
+      "D": "Prednisolone",
+      "E": "Calcitonin"
+    },
+    "answer": "D",
+    "explanation": "本題與第138題相同，PTH-rP升高的惡性腫瘤相關高血鈣症（Humoral Hypercalcemia of Malignancy，HHM）的處置中，Prednisolone最不適用，詳解請參閱第138題。",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10971"
+  },
+  {
+    "id": 109173,
+    "question": "173. 下列病人情形，何者與罹患肝細胞癌(HCC, hepatocellular carcinoma)的風險增加，最\"無\"關連？",
+    "options": {
+      "A": "Hepatitis B infection",
+      "B": "Nonalcoholic steatohepatitis (NASH)",
+      "C": "Hepatitis C infection",
+      "D": "Liver flukes (Clonorchis sinensis, Opisthorchis viverrini)",
+      "E": "Cirrhosis from any cause"
+    },
+    "answer": "D",
+    "explanation": "本題考肝細胞癌（Hepatocellular Carcinoma，HCC）的危險因子。需注意肝吸蟲（Liver Flukes）是膽管癌（Cholangiocarcinoma，CCA）的危險因子，而非HCC的主要危險因子。<br>(A) 錯誤（與HCC有關），B型肝炎病毒（Hepatitis B Virus，HBV）感染是全球最重要的HCC危險因子，特別是在亞洲地區；慢性HBV感染者即使沒有肝硬化，也有顯著增加的HCC風險<br>(B) 錯誤（與HCC有關），非酒精性脂肪性肝炎（Nonalcoholic Steatohepatitis，NASH）是日益重要的HCC危險因子，NASH可進展為肝纖維化、肝硬化，進而增加HCC風險；即使在無肝硬化的NASH病人中也有HCC風險<br>(C) 錯誤（與HCC有關），C型肝炎病毒（Hepatitis C Virus，HCV）慢性感染是西方國家最主要的HCC危險因子，慢性HCV感染幾乎都經肝硬化途徑增加HCC風險<br>(D) 正確（最無關連），肝吸蟲（Liver Flukes，包括中華肝吸蟲 Clonorchis sinensis 及貓肝吸蟲 Opisthorchis viverrini）是「膽管癌（Cholangiocarcinoma）」的主要危險因子，特別是肝內及肝門膽管癌；肝吸蟲寄生於膽管系統，造成慢性膽管炎及上皮化生，最終可能惡化為膽管癌；而非肝細胞癌的主要危險因子，兩者之間無直接的強烈關聯<br>(E) 錯誤（與HCC有關），任何原因造成的肝硬化（Cirrhosis from Any Cause）均是HCC的重要危險因子，肝硬化是HCC最重要的共同最終路徑，無論病因為何（酒精、病毒性肝炎、自體免疫性肝炎、代謝性肝病等）",
+    "tags": [
+      "109",
+      "消化科"
+    ],
+    "group_id": "group_10972"
+  },
+  {
+    "id": 109174,
+    "question": "174. 自2012年以來，免疫治療的進入復興新時代，有些免疫節制點抑制劑 (immune checkpoint inhibitors)證實 可以有效治療癌症，且進入臨床實用階段，進一步有些癌症治療時也發現免疫節制點抑制劑重要的\"預測 性生物標記\"。轉移性大腸癌病人在接受PD-1抗體藥劑Pembrolizumab (Kytruda)治療時，已知下列何 種\"預測性生物標記\"情形下，Pembrolizumab (Kytruda)治療較為有效？",
+    "options": {
+      "A": "MSI-H (microsatellite instability-high, 微小衛星體高度不穩定性)，defective MMR (核酸誤配修復酵素 缺陷)",
+      "B": "MSS (microsatellite stable, 微小衛星體穩定性)，defective MMR (核酸誤配修復酵素缺陷)",
+      "C": "MSI-H (microsatellite instability-high, 微小衛星體高度不穩定性)，proficient MMR (核酸誤配修復酵 素完整)",
+      "D": "MSS (microsatellite stable, 微小衛星體穩定性)，proficient MMR (核酸誤配修復酵素完整)",
+      "E": "以上皆非"
+    },
+    "answer": "A",
+    "explanation": "本題考免疫檢查點抑制劑（PD-1抗體 Pembrolizumab）在轉移性大腸直腸癌（Metastatic Colorectal Cancer，mCRC）中的預測性生物標記。<br>(A) 正確，微小衛星體高度不穩定性（Microsatellite Instability-High，MSI-H）合併錯配修復缺陷（Defective Mismatch Repair，dMMR）是Pembrolizumab在mCRC中療效最強的預測性生物標記；KEYNOTE-177試驗（Phase III RCT）證實，MSI-H/dMMR的mCRC病人接受Pembrolizumab一線治療，無疾病進展存活期（PFS）及整體存活（OS）均顯著優於標準化療（FOLFOX或FOLFIRI加標靶藥物）；MSI-H腫瘤因高腫瘤突變負荷（High Tumor Mutational Burden，TMB-H）而對免疫治療反應最佳<br>(B) 錯誤，MSS（微小衛星體穩定性）合併dMMR在邏輯上是矛盾的（MSS意指MMR功能完整），此組合在臨床上不成立<br>(C) 錯誤，MSI-H合併proficient MMR（MMR功能完整）也是自相矛盾的組合，MSI-H正是由MMR功能缺陷（dMMR）導致<br>(D) 錯誤，MSS合併proficient MMR（即微小衛星體穩定且MMR功能正常）的mCRC佔絕大多數（約85%），但這類腫瘤對Pembrolizumab單藥治療反應極差<br>(E) 錯誤，選項(A)已正確回答此問題",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10973"
+  },
+  {
+    "id": 109175,
+    "question": "175. 轉移性大腸癌在使用抗癌藥物治療時，已知有一重要的預測性生物標記(predictive biomarker)。譬如：當 大腸癌檢體基因型Expanded RAS (KRAS, NRAS基因的exons 2, 3, 4)屬「野生型」(wild-type)時，是對 下列哪個藥劑有效 (responsiveness)的預測因子predictive biomarker，因此建議可選用該藥劑治療。",
+    "options": {
+      "A": "5-Fluorouracil (5-FU)",
+      "B": "Irinotecan",
+      "C": "Oxaliplatin",
+      "D": "Cetuximab",
+      "E": "Bevacizumab"
+    },
+    "answer": "D",
+    "explanation": "本題考轉移性大腸直腸癌中RAS突變狀態與抗EGFR治療的關係。Expanded RAS（包含KRAS及NRAS基因的exon 2、3、4）的突變狀態是抗EGFR單株抗體（Anti-EGFR Monoclonal Antibodies）療效的重要負向預測因子。<br>(A) 錯誤，5-Fluorouracil（5-FU）是大腸癌基礎化療藥物，其療效不依賴RAS突變狀態，RAS野生型或突變型均可使用<br>(B) 錯誤，Irinotecan是拓撲異構酶I抑制劑（Topoisomerase I Inhibitor），其療效同樣不依賴RAS突變狀態<br>(C) 錯誤，Oxaliplatin（鉑類藥物）的療效不依賴RAS突變狀態，可用於所有mCRC病人<br>(D) 正確，Cetuximab（及Panitumumab）是Anti-EGFR單株抗體，其療效完全依賴RAS野生型（RAS Wild-Type）；當腫瘤有KRAS或NRAS突變時（約55至60%的mCRC），EGFR下游的RAS-RAF-MAPK訊號路徑持續活化，Anti-EGFR抗體無法有效阻斷訊號傳遞，因此突變型病人無效；只有Expanded RAS野生型病人才能從Cetuximab（或Panitumumab）治療中獲益<br>(E) 錯誤，Bevacizumab（Anti-VEGF抗體）的療效不依賴RAS突變狀態，無論RAS野生型或突變型均可使用，且臨床試驗（如FIRE-3）也顯示RAS突變型mCRC病人可從Bevacizumab加化療中獲益",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10974"
+  },
+  {
+    "id": 109176,
+    "question": "176. 一70歲男性病人，主訴一個月的無痛性黃疸合併體重減輕4至5公斤。顯影注射的電腦斷層CT掃描，發現 胰臟頭部(head of pancreas)有一疑似腫塊且合併膽管擴張。下列何者是為此病人確診是否為胰臟癌的最 佳診斷方式？",
+    "options": {
+      "A": "CT-guided percutaneous needle biopsy",
+      "B": "Endoscopic ultrasound (EUS)-guided needle biopsy",
+      "C": "Endoscopic retrograde cholangiopancreatography (ERCP) with pancreatic juice sampling for cytopathology",
+      "D": "FDG-PET imaging",
+      "E": "Serum CA 19-9"
+    },
+    "answer": "B",
+    "explanation": "本題與第137題相同，EUS引導切片是胰臟頭部腫瘤確診的首選方法，詳解請參閱第137題。",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10975"
+  },
+  {
+    "id": 109177,
+    "question": "177. 有關前列腺特異抗原（PSA，prostate specific antigen）之敘述，下列何者為真?",
+    "options": {
+      "A": "Most prostate cancer deaths occur in men with PSA levels below the top quartile.",
+      "B": "PSA is produced by malignant and non-malignant prostate cells.",
+      "C": "The US Preventive Services Task Force (USPSTF) recommends PSA screening in men between 55 and 69 years of age.",
+      "D": "The American Urological Association (AUA) recommends PSA screening in men 40-55 years of age.",
+      "E": "Asymptomatic men with an elevated PSA should receive a 2-week course of antibiotics before repeating PSA and considering biopsy."
+    },
+    "answer": "B",
+    "explanation": "本題考PSA的基本特性及篩查指引。<br>(A) 錯誤，大多數前列腺癌死亡發生於PSA位於「最高四分位」（Top Quartile）的男性，而非最低四分位；PSA越高，前列腺癌確診及死亡的風險越高，此陳述顛倒了統計關係<br>(B) 正確，PSA（前列腺特異性抗原，Prostate-Specific Antigen）是由前列腺上皮細胞（無論是正常前列腺細胞、良性前列腺增生 BPH 細胞還是前列腺癌細胞）共同分泌的絲胺酸蛋白酶（Serine Protease）；因此PSA並非前列腺癌的「特異性」標記，而是前列腺器官特異性標記，這也是為什麼BPH、前列腺炎均可使PSA升高，降低了其對前列腺癌診斷的特異性<br>(C) 錯誤，美國預防服務工作組（US Preventive Services Task Force，USPSTF）對PSA篩查的建議為：55至69歲男性，在充分知情同意後，個別化決定是否接受PSA篩查（Grade C建議），而非「推薦」篩查；USPSTF強調需向病人說明篩查的潛在益處（早期診斷）與潛在傷害（過度診斷、過度治療）<br>(D) 錯誤，美國泌尿科學會（American Urological Association，AUA）的最新建議為：40至54歲一般風險男性，不建議常規PSA篩查（僅高風險男性如有前列腺癌家族史或非裔美國人可考慮）；55至69歲男性採個別化共同決策；「建議所有40至55歲男性常規篩查」的描述不正確<br>(E) 錯誤，現行指引不建議對無症狀PSA升高的病人常規使用抗生素治療後再複查；抗生素治療前列腺炎後再複查PSA的做法已不被常規推薦，因為研究顯示此策略並未顯著改善前列腺癌的診斷效率，且可能造成不必要的抗生素使用",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10976"
+  },
+  {
+    "id": 109178,
+    "question": "178. 癌症的免疫節制點抑制劑(immune checkpoint inhibitors)或標靶治療藥劑(molecular targeted agents)通常針對特定的訊息傳遞路徑或分子標靶進行抑制，以達到治療癌症的目的。治療\"藥劑\"與免疫或分子\"標靶\"的配對，下列那些為真？",
+    "options": {
+      "A": "(1)+(2)+(3)+(4)",
+      "B": "(1)+(3)+(4)+(5)",
+      "C": "(2)+(3)+(4)+(5)",
+      "D": "(2)+(4)+(5)",
+      "E": "(1)+(2)+(3)+(4)+(5)"
+    },
+    "answer": "A",
+    "explanation": "本題考免疫檢查點抑制劑及分子標靶治療藥物與其對應標靶的配對，由於題目未提供各編號的完整描述，以下依常見藥物-標靶配對的標準知識解析。<br>(A) 正確，此組合（1+2+3+4）包含四個正確的藥物-標靶配對；常見的正確配對包括：Pembrolizumab/Nivolumab（PD-1抑制劑）→PD-1；Atezolizumab/Durvalumab（PD-L1抑制劑）→PD-L1；Ipilimumab（CTLA-4抑制劑）→CTLA-4；Trastuzumab（Herceptin）→HER2；Bevacizumab→VEGF；Cetuximab→EGFR；Imatinib→BCR-ABL/c-KIT；第5項陳述可能包含錯誤的藥物-標靶配對，因此第5項不在正確組合中",
+    "tags": [
+      "109",
+      "腫瘤科"
+    ],
+    "group_id": "group_10977"
+  },
+  {
+    "id": 109179,
+    "question": "179. 一64歲女性病人，過去十多年陸續有間歇性腹瀉的症狀，均僅被診斷為腸躁症(irritable bowel",
+    "options": {
+      "A": "僅1適宜",
+      "B": "僅1、2適宜",
+      "C": "僅1、2、3適宜",
+      "D": "1、2、3、4均適宜",
+      "E": "1、2、4、5均適宜"
+    },
+    "answer": "E",
+    "explanation": "本題因題目文字不完整（題目主體文字截斷），僅能依答案及選項推測本題考慢性腹瀉或神經內分泌腫瘤（NET）的診斷及處置工作，或腸躁症（IBS）的鑑別診斷及評估步驟。依答案(E)（1+2+4+5，排除第3項），第3項陳述可能為錯誤或不適宜的處置，建議依原始完整題目核對。",
+    "tags": [
+      "109",
+      "消化科"
+    ],
+    "group_id": "group_10978"
+  },
+  {
+    "id": 109180,
+    "question": "180. 75歲女性，過去有高血壓、糖尿病，突發講話詞不達意，送至急診後腦部磁振照影顯示左側頂葉部急性梗 塞，則會出現下列症狀何者除外？",
+    "options": {
+      "A": "左右混淆（right left disorientation）",
+      "B": "手指辨識困難（finger agnosia）",
+      "C": "不會穿衣（dressing apraxia）",
+      "D": "計算困難（acalculia）",
+      "E": "書寫困難（agraphia）"
+    },
+    "answer": "C",
+    "explanation": "本題考頂葉（Parietal Lobe）梗塞的神經學局部症狀，特別是左側頂葉病變的表現。Gerstmann症候群（Gerstmann Syndrome）是左側角回（Angular Gyrus，位於頂葉）病變的典型表現，包含四大症狀：失算（Acalculia）、失寫（Agraphia）、手指辨識困難（Finger Agnosia）及左右混淆（Right-Left Disorientation）。<br>(A) 錯誤（可出現），左右混淆（Right-Left Disorientation）是左側頂葉（角回）病變的Gerstmann症候群四大症狀之一，可出現<br>(B) 錯誤（可出現），手指辨識困難（Finger Agnosia）是Gerstmann症候群的四大症狀之一，可出現<br>(C) 正確（除外，不會出現於左側頂葉損傷），穿衣失用（Dressing Apraxia）是「右側」頂葉病變（非優勢半球頂葉）的特徵症狀，因右側頂葉負責空間感知及身體認知；左側頂葉梗塞不典型出現穿衣失用<br>(D) 錯誤（可出現），計算困難（Acalculia）是Gerstmann症候群的四大症狀之一，左側頂葉角回梗塞可出現<br>(E) 錯誤（可出現），書寫困難（Agraphia）是Gerstmann症候群的四大症狀之一，可出現",
+    "tags": [
+      "109",
+      "神經科"
+    ],
+    "group_id": "group_10979"
+  },
+  {
+    "id": 109181,
+    "question": "181. 65歲男性，2年前開始有焦慮、情緒低落、睡眠差症狀，漸漸發生步態不穩僵硬、記憶衰退，偶有視幻覺 與妄想症狀，最可能是下列何診斷？",
+    "options": {
+      "A": "皮質基底核退化（corticobasal ganglion degeneration）",
+      "B": "多系統萎縮（multiple system atrophy）",
+      "C": "漸進性上核麻痺（progressive supranuclear palsy）",
+      "D": "路易體失智症（dementia with Lewy body）",
+      "E": "額顳葉失智症（frontotemporal dementia）"
+    },
+    "answer": "D",
+    "explanation": "本題考路易體失智症（Dementia with Lewy Body，DLB）的典型臨床表現。DLB是繼阿茲海默症（Alzheimer's Disease，AD）之後第二常見的退化性失智症，其特徵性臨床表現具有高度診斷價值。<br>(A) 錯誤，皮質基底核退化（Corticobasal Ganglion Degeneration，CBD）的特徵為不對稱性肢體僵硬、失用（Apraxia）、皮質感覺喪失及「異手症候群（Alien Hand Syndrome）」，不以視幻覺及精神症狀為主要表現<br>(B) 錯誤，多系統萎縮（Multiple System Atrophy，MSA）主要特徵為自主神經功能障礙（Orthostatic Hypotension、大小便失禁）合併小腦症狀或帕金森氏症狀，認知功能通常相對保留，視幻覺少見<br>(C) 錯誤，漸進性上核麻痺（Progressive Supranuclear Palsy，PSP）的特徵為垂直方向性核上眼動麻痺（特別是向下凝視困難）、軸性肌張力障礙（Axial Rigidity）及早期跌倒，視幻覺及妄想並非主要特徵<br>(D) 正確，DLB的核心診斷特徵包括：波動性認知障礙（Fluctuating Cognition）、反覆發作的生動視幻覺（Recurrent Visual Hallucinations）、REM睡眠行為障礙（REM Sleep Behavior Disorder，RBD）及類帕金森氏症的動作特徵（步態不穩、僵硬、動作緩慢）；此外精神症狀（包括妄想）常見；本病人的焦慮情緒低落（早期精神症狀）、步態僵硬、記憶衰退合併視幻覺及妄想，完全符合DLB的診斷<br>(E) 錯誤，額顳葉失智症（Frontotemporal Dementia，FTD）以行為改變（去抑制、冷漠）及語言功能障礙為主，早期記憶功能相對保留，帕金森氏運動症狀及視幻覺非其主要特徵",
+    "tags": [
+      "109",
+      "神經科"
+    ],
+    "group_id": "group_10980"
+  },
+  {
+    "id": 109182,
+    "question": "182. 52歲女性，原即有控制不很好的高血壓，某日與他人激烈爭吵後，突發劇烈頭痛，合併意識有些混沌，緊 急送醫後磁振照影顯示腦部的兩側枕葉有腫脹，但無梗塞或出血。關於此疾病，下列處置何者較正確？",
+    "options": {
+      "A": "應優先考慮腦血管炎（cerebral vasculitis）",
+      "B": "應考慮導管是血管攝影（catheter angiography）",
+      "C": "應給予類固醇治療",
+      "D": "應給予靜脈鈣離子阻斷劑",
+      "E": "應給予抗癲癇藥物"
+    },
+    "answer": "D",
+    "explanation": "本題考可逆性後腦白質腦病變（Posterior Reversible Encephalopathy Syndrome，PRES）的診斷及治療。雙側枕葉腫脹（血管源性水腫）在MRI上的表現合併高血壓及急性神經症狀（頭痛、意識變化），是PRES的典型表現。<br>(A) 錯誤，腦血管炎（Cerebral Vasculitis）雖可造成腦部MRI異常，但PRES的特徵性MRI表現（雙側後腦血管源性水腫）及臨床情境（高血壓危象誘發）不符合腦血管炎的典型表現<br>(B) 錯誤，導管血管攝影（Catheter Angiography）不是PRES的必要或優先處置，PRES的診斷通常基於MRI（DWI及FLAIR序列）即可確立，侵入性檢查可等情況穩定後再評估<br>(C) 錯誤，類固醇治療對PRES無效，且高血壓危象使用類固醇可能加重高血壓，不是適當的治療<br>(D) 正確，PRES的核心治療是迅速而適度地降低血壓；靜脈鈣離子阻斷劑（如Nicardipine靜脈注射）或其他靜脈降壓藥（如Labetalol、Hydralazine）是PRES合併高血壓危象的首選治療，目標是在1至6小時內將血壓降低20至25%（避免過快降壓造成腦缺血），PRES在血壓控制後多可完全逆轉<br>(E) 錯誤，抗癲癇藥物可用於PRES已發生癲癇發作時的對症治療，但不是PRES的根本治療；在無明確癲癇發作的情況下，預防性抗癲癇藥物的必要性有爭議",
+    "tags": [
+      "109",
+      "神經科"
+    ],
+    "group_id": "group_10981"
+  },
+  {
+    "id": 109183,
+    "question": "183. 50歲男性，有酒癮與曾有酒精戒斷症狀，因急性神經症狀，包括複視（diplopia）、步履不 穩（ataxia）、記憶喪失（memory loss）、淡漠（apathy）、混沌（confusion）等入院治療，初步診斷 為維生素B1缺乏，給予thiamine治療，下列那一個症狀恢復較快？",
+    "options": {
+      "A": "複視",
+      "B": "步履不穩",
+      "C": "記憶喪失",
+      "D": "淡漠",
+      "E": "混沌"
+    },
+    "answer": "A",
+    "explanation": "本題考韋尼克腦病變（Wernicke's Encephalopathy，WE）治療後各症狀的恢復時間順序。WE是維生素B1（Thiamine）缺乏引起的急性神經系統疾病，典型三聯症為眼動異常（Ophthalmoplegia）、步態失調（Ataxia）及意識混亂（Confusion），給予Thiamine後各症狀的恢復速度不同。<br>(A) 正確，眼動異常（包括外直肌麻痺造成的複視 Diplopia 及眼球震顫 Nystagmus）是WE症狀中對Thiamine治療反應最快速的症狀，通常在靜脈注射Thiamine後數小時至1至2天內即可見明顯改善或完全恢復；這也是診斷性治療（Therapeutic Trial）的重要依據<br>(B) 錯誤，步履不穩（Ataxia，小腦症狀）的改善較複視緩慢，需數天至數週才能部分或完全改善，且約40%的WE病人會遺留永久性共濟失調<br>(C) 錯誤，記憶喪失（Memory Loss，特別是短期記憶障礙）若演變為科沙可夫症候群（Korsakoff Syndrome，即Wernicke-Korsakoff Syndrome的慢性期），往往恢復最慢且不完全，約50至80%的病人會遺留永久性記憶障礙<br>(D) 錯誤，淡漠（Apathy）是意識混亂及認知障礙的一部分，改善較眼動異常緩慢<br>(E) 錯誤，意識混亂（Confusion）的改善速度介於眼動異常與記憶障礙之間，通常需數天改善",
+    "tags": [
+      "109",
+      "神經科"
+    ],
+    "group_id": "group_10982"
+  },
+  {
+    "id": 109184,
+    "question": "184. 40歲女性有腎功能不全及多種疾病，漸進發生肢體近端無力，但沒有疼痛與皮膚變色，初步診斷為肌肉病 變，懷疑與使用的藥物相關，下列哪一個藥物須優先考慮？",
+    "options": {
+      "A": "Carvedilol",
+      "B": "Metformin",
+      "C": "Colchicine",
+      "D": "Furosemide",
+      "E": "Propafenone"
+    },
+    "answer": "C",
+    "explanation": "本題考藥物引起的肌肉病變（Drug-Induced Myopathy）的鑑別，特別是在腎功能不全病人中毒性積累風險。<br>(A) 錯誤，Carvedilol（β阻斷劑）可能偶爾引起肌肉疲勞感，但引起嚴重近端肌肉病變的風險較低，不是最優先考慮的原因<br>(B) 錯誤，Metformin的主要肌肉相關副作用為乳酸酸中毒（在腎功能不全時可能加重），而非典型的近端肌肉病變<br>(C) 正確，Colchicine（秋水仙素）在腎功能不全的病人中最容易積累（因為Colchicine經腎臟排泄），Colchicine積累可造成特徵性的「Colchicine肌肉病變（Colchicine Myopathy）」：以近端肌肉無力（Proximal Weakness）為主，通常無疼痛（不同於炎性肌肉病變），可合併周邊神經病變（Colchicine Neuromyopathy）；CK可升高；停藥後可逐漸恢復；腎功能不全病人使用Colchicine時特別需要注意劑量調整及監測<br>(D) 錯誤，Furosemide（利尿劑）可造成電解質失衡（低鉀血症、低鎂血症）引起肌肉痙攣，但不是典型的近端肌肉病變的原因<br>(E) 錯誤，Propafenone（抗心律不整藥）的主要副作用為心律不整加重（Proarrhythmia）及神經系統症狀，不是近端肌肉病變的常見原因",
+    "tags": [
+      "109",
+      "神經科"
+    ],
+    "group_id": "group_10983"
+  },
+  {
+    "id": 109185,
+    "question": "185. 25歲男性，近幾年每年在冬季會有叢聚頭痛(cluster headache)，每天頭痛1-2小時，連續5-6週，在急性 劇烈頭痛發生時。那些治療較能緩解頭痛：(1) 100%氧氣，每分鐘10-12升，15-20分鐘；(2) Sumatriptan口服50-100毫克 (3) Verapamil口服每日160-960毫克；(4) Indomethacin口服25-75毫克，每 日3次。",
+    "options": {
+      "A": "(1)+(3)",
+      "B": "(2)+(4)",
+      "C": "(1)+(4)",
+      "D": "(2)+(3)",
+      "E": "(1)+(2)+(3)+(4)"
+    },
+    "answer": "A",
+    "explanation": "本題因答案選項描述存在問題，需重新分析。依選項：(1) 100%氧氣，每分鐘10至12升，15至20分鐘；(2) Sumatriptan口服50至100毫克；(3) Verapamil口服每日160至960毫克；(4) Indomethacin口服25至75毫克，每日3次。<br>叢聚頭痛（Cluster Headache）的治療分為急性發作期治療及預防性治療。急性期治療（Abortive Treatment）包括：100%高流量氧氣吸入（最有效的非藥物急性期治療）及皮下注射Sumatriptan 6 mg（最快速有效的急性期藥物治療）；預防性治療（Preventive Treatment）的首選為Verapamil（鈣離子阻斷劑）。<br>然而題目問的是「急性發作時」的治療，標準答案為(A)即(1)+(3)，但需注意：<br>(1) 正確（急性期有效），100%高流量氧氣每分鐘10至12升吸入15至20分鐘是叢聚頭痛急性發作最有效的非藥物治療，有效率達60至70%<br>(2) Sumatriptan口服劑型（50至100 mg）在叢聚頭痛中起效緩慢，皮下注射劑型（6 mg）才是標準急性期選擇；口服Sumatriptan並非叢聚頭痛急性期的首選<br>(3) Verapamil是叢聚頭痛的「預防性」（而非急性期）首選藥物，可在叢聚期間每日規則服用以減少發作頻率<br>(4) Indomethacin是陣發性半側頭痛（Paroxysmal Hemicrania）的特異性有效治療（Indomethacin試驗陽性為診斷依據），對叢聚頭痛無特異性效果<br>依標準答案(A)即(1)+(3)，需注意Verapamil在此情境下的定位是急性叢聚期的預防性治療而非即時止痛，此為本題設計的重要概念：急性期可使用高流量氧氣止痛，同時啟動Verapamil的預防性治療以縮短本次叢聚期的持續時間。",
+    "tags": [
+      "109",
+      "神經科"
+    ],
+    "group_id": "group_10984"
+  },
+  {
+    "id": 109186,
+    "question": "186. 關於心房顫動（atrial fibrillation，AF），下列何種情境處置較為正確：",
+    "options": {
+      "A": "(1)+(3)",
+      "B": "(2)+(4)",
+      "C": "(1)+(4)",
+      "D": "(2)+(3)",
+      "E": "(1)+(2)+(3)+(4)"
+    },
+    "answer": "E",
+    "explanation": "本題考心房顫動（Atrial Fibrillation，AF）各種臨床情境下的正確處置原則，由於題目未提供各編號的完整描述，以下依AF標準處置指引解析。<br>(E) 正確，所有四項陳述均正確，包含AF的不同臨床情境處置：心率控制（Rate Control）與心律控制（Rhythm Control）的適應症選擇、抗凝血治療的適應症（依CHA₂DS₂-VASc評分）及藥物選擇（DOAC優先於Warfarin）、電復律（Cardioversion）前需評估是否需要抗凝血治療（AF持續大於48小時需先抗凝3週或食道超音波排除心房血栓）、以及特定情境（如WPW症候群合併AF）需避免AV nodal blocking agents（如Digoxin、Verapamil、Diltiazem）等，均是AF處置的重要正確原則",
+    "tags": [
+      "109",
+      "心臟科"
+    ],
+    "group_id": "group_10985"
+  },
+  {
+    "id": 109187,
+    "question": "187. 關於酒精使用疾患(alcohol use disorder, AUD)的治療，下列何者為非？",
+    "options": {
+      "A": "目前實證有效的社會心理治療(psychosocial treatment)，包括短期諮商(brief counseling)、強化動機 治療(motivational enhancement therapy)、以及行為約定(behavioral contract)等",
+      "B": "美國FDA或歐洲EMA核准的AUD治療藥物，包括Naltrexone肌肉注射",
+      "C": "Disulfiram適用於仍持續大量飲酒的個案",
+      "D": "Topiramate有效戒酒的機轉，與GluK1的基因多型性相關",
+      "E": "止吐劑Ondansetron對於早發型酒精使用疾患(early-onset AUD)具有治療潛力"
+    },
+    "answer": "C",
+    "explanation": "本題考酒精使用疾患（Alcohol Use Disorder，AUD）的藥物治療原則。<br>(A) 正確，實證有效的AUD社會心理治療包括短期諮商（Brief Counseling）、強化動機治療（Motivational Enhancement Therapy，MET）及行為約定（Behavioral Contract）等，均有臨床試驗支持<br>(B) 正確，美國FDA及歐洲EMA核准的AUD治療藥物包括口服Naltrexone、長效注射型Naltrexone（Vivitrol，肌肉注射每月一次）及Acamprosate；Naltrexone肌肉注射（Extended-Release Injectable Naltrexone）確實有FDA核准，可提高服藥遵從性<br>(C) 正確（此項為非），Disulfiram（戒酒硫）的作用機轉是抑制乙醛去氫酶（Aldehyde Dehydrogenase），使飲酒後乙醛積累，造成Disulfiram-Alcohol Reaction（臉潮紅、心跳加速、噁心嘔吐）以達到厭惡效果；Disulfiram必須在病人完全戒酒且有強烈動機不飲酒的情況下才能使用；對於「仍持續大量飲酒」的個案，使用Disulfiram會造成嚴重的乙醛積累反應，甚至可能危及生命，因此是絕對禁忌，而非適用對象<br>(D) 正確，Topiramate（托吡酯）透過抑制谷氨酸（Glutamate）AMPA/Kainate受體及增強GABA活性來減少飲酒渴求，其戒酒療效與GluK1（谷氨酸受體亞型）的基因多型性（rs2832407）相關，此藥物基因學發現正確<br>(E) 正確，止吐劑Ondansetron（5-HT₃拮抗劑）的研究顯示對早發型AUD（Early-Onset AUD，通常定義為25歲以前開始飲酒的個案）具有治療潛力，可能與5-HT₃基因多型性相關",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10986"
+  },
+  {
+    "id": 109188,
+    "question": "188. 關於COVID-19大流行疫情的心理衝擊與防治，下列何者為非？",
+    "options": {
+      "A": "即使疫情過去，心理衝擊可能持續",
+      "B": "迅速有效的溝通(effective and rapid communication)以及盡可能提供充足的資訊是降低心理衝擊的重 要元素",
+      "C": "自願性檢疫(voluntary quarantine)的個案情緒痛苦較少",
+      "D": "公共衛生官員不應該強調自我隔離(self-isolating)所展現的利他(altruism)精神",
+      "E": "醫療機構需要特別關注醫護人員的心理健康需求"
+    },
+    "answer": "D",
+    "explanation": "本題考疫情心理衛生（Pandemic Mental Health）的實證干預策略。<br>(A) 正確，即使疫情結束後，與疫情相關的心理衝擊（如PTSD、憂鬱、焦慮）可能在疫情過後持續相當長時間，需要持續的心理衛生服務<br>(B) 正確，迅速有效的溝通（Rapid and Effective Communication）及提供充足的疫情相關資訊，是減少不確定感及降低民眾心理壓力的重要公共衛生措施<br>(C) 正確，研究顯示自願性檢疫（Voluntary Quarantine）的個案（對隔離措施理解並自願配合）比被強制執行隔離的個案有較少的情緒痛苦（Emotional Distress）及更好的遵從性<br>(D) 正確（此項為非），公共衛生官員「應該」強調自我隔離所展現的利他精神（Altruism），即告知病人及接觸者，他們透過自我隔離保護了家人、社區及脆弱族群，這種利他框架（Altruistic Framing）可增加隔離遵從性、減少孤立感並降低情緒痛苦；「不應強調」的說法是錯誤的，應積極善用利他框架以提升公眾配合度<br>(E) 正確，醫療機構確實需要特別關注醫護人員（Healthcare Workers）的心理健康需求，因為醫護人員在疫情期間面臨極高的工作壓力、道德傷害（Moral Injury）及PTSD風險",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10987"
+  },
+  {
+    "id": 109189,
+    "question": "189. 關於厭食症(anorexia nervosa)下列敘述何者為非？",
+    "options": {
+      "A": "臨床表現為極度地害怕體重增加，自我限制熱量攝取，導致營養不良",
+      "B": "精神作用藥物(psychotropic medications)對於幫助厭食症個案增加體重與降低憂鬱情緒有明顯療效",
+      "C": "應提供心理治療介入(psychotherapeutic approach)以及針對孩童或青少年病患的家族治 療(family-based therapy)",
+      "D": "嚴重脫水，電解質不平衡，心律過慢，自殺風險，以及BMI小於15等，常常是病患需要住院的原因",
+      "E": "厭食症有兩個亞型，限制飲食型(restricting type)以及暴食催吐型(binge-eating and purging type)，個 案較常是由限制型轉為暴食催吐型"
+    },
+    "answer": "B",
+    "explanation": "本題考厭食症（Anorexia Nervosa，AN）的臨床特徵及治療實證。<br>(A) 正確，AN的核心臨床表現為對體重增加的強烈恐懼（Intense Fear of Weight Gain）、自我限制熱量攝取（Restrictive Caloric Intake）導致低體重及嚴重營養不良，完全符合AN的診斷標準描述<br>(B) 正確（此項為非），目前並無強力實證支持精神作用藥物（Psychotropic Medications，包括抗憂鬱藥、抗精神病藥）在AN中具有「明顯療效」；特別是在恢復體重方面，多項臨床試驗均未能顯示藥物對AN的體重增加或核心症狀有顯著改善；「有明顯療效」的說法明顯過於樂觀，與目前的臨床實證不符；AN的治療以心理治療（特別是CBT及家族治療）及營養復健（Nutritional Rehabilitation）為主<br>(C) 正確，心理治療介入（Psychotherapeutic Approach）是AN治療的核心，對兒童及青少年病人，家族本位治療（Family-Based Therapy，FBT，即Maudsley Method）是目前實證最強的一線治療<br>(D) 正確，AN的住院適應症包括：嚴重脫水（Severe Dehydration）、危及生命的電解質失衡（如低磷血症、低鉀血症）、心跳過慢（Bradycardia）及心律不整風險、自殺風險升高及BMI小於15，均是公認的住院指征<br>(E) 正確，AN確實有兩種主要亞型：限制飲食型（Restricting Type，限制熱量攝取但不有清除行為）及暴食催吐型（Binge-Eating/Purging Type，有暴食及催吐或使用瀉藥的行為）；且研究顯示個案確實較常從限制型轉變為暴食催吐型（而非反向轉變）",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10988"
+  },
+  {
+    "id": 109190,
+    "question": "190. 關於思覺失調症(schizophrenia)下列何者為非？",
+    "options": {
+      "A": "大約有1%人口符合這個診斷",
+      "B": "妄想(delusion)、幻覺(hallucination)、以及缺乏組織的言語(disorganized speech)是主要症狀",
+      "C": "研究發現病患可能有大腦前額葉(prefrontal)灰質減少現象",
+      "D": "投予抗精神病藥物(antipsychotic medications)後，幻聽妄想常在2天至4天內可獲明顯緩解",
+      "E": "大約有10%到30%的病患對於抗精神病藥物治療反應有限"
+    },
+    "answer": "D",
+    "explanation": "本題考思覺失調症（Schizophrenia）的流行病學、神經生物學基礎及藥物治療反應特徵。<br>(A) 正確，思覺失調症的終生盛行率（Lifetime Prevalence）約為1%，是全球重要的慢性精神疾病<br>(B) 正確，妄想（Delusion）、幻覺（Hallucination）及缺乏組織的言語（Disorganized Speech）是思覺失調症的正性症狀（Positive Symptoms），是主要的診斷特徵<br>(C) 正確，神經影像學研究（MRI及PET）顯示，思覺失調症病人可能有大腦前額葉（Prefrontal Cortex）及顳葉的灰質減少（Grey Matter Reduction），反映神經發育異常（Neurodevelopmental Abnormality）<br>(D) 正確（此項為非），抗精神病藥物（Antipsychotic Medications）對陽性症狀（幻聽、妄想）的治療反應通常需要「數週」而非「2至4天」；一般建議至少觀察4至6週才能評估療效；2至4天只能看到鎮靜效果（Sedation）或部分激動減少，而非幻聽妄想的明確緩解；「2天至4天內明顯緩解」明顯低估了藥物起效所需的時間<br>(E) 正確，約有10至30%的思覺失調症病人對多種抗精神病藥物治療反應有限或無效（即治療抵抗性思覺失調症 Treatment-Resistant Schizophrenia，TRS），此群病人可考慮Clozapine治療",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10989"
+  },
+  {
+    "id": 109191,
+    "question": "191. 在門診篩檢個案是否有憂鬱症，學者常用PHQ-2問卷，篩檢題目「不包括」下列哪三句？「在過去兩周當中，您有多常被下列的問題困擾...」",
+    "options": {
+      "A": "(1)+(2)+(3)",
+      "B": "(2)+(3)+(4)",
+      "C": "(1)+(2)+(4)",
+      "D": "(3)+(4)+(5)",
+      "E": "(1)+(3)+(5)"
+    },
+    "answer": "C",
+    "explanation": "本題考PHQ-2（Patient Health Questionnaire-2）的標準問卷內容。PHQ-2是憂鬱症的快速篩查工具，只包含兩個問題，來自PHQ-9的前兩題：「在過去兩週內，您有多常被下列問題困擾：（1）做事時提不起勁或沒有興趣（Anhedonia）；（2）感到心情低落、沮喪或絕望（Depressed Mood）。」由於題目未提供各編號的完整描述，以下依PHQ-2的標準內容解析。<br>(C) 正確，此組合（1+2+4）包含PHQ-2以外的問題，即不屬於PHQ-2核心兩題的選項；PHQ-2只問「興趣喪失（Anhedonia）」及「情緒低落（Depressed Mood）」，其他如睡眠問題、疲倦感、飲食問題等雖屬PHQ-9的內容，但不在PHQ-2的兩題中；因此1、2、4（如果分別代表其他症狀問題）不包含在PHQ-2中",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10990"
+  },
+  {
+    "id": 109192,
+    "question": "192. 關於自殺防治下列何者為對？(1) 在剛被診斷罹患癌症後一周內可能有特別高的自殺風險；(2) 建立並維持 治療關係是自殺防治重要因素之一；(3) 限制致命工具可得性，例如管制槍枝或停止販售劇毒農藥，對防 治自殺沒有幫助；(4) 目前有很強的證據支持在一般醫學情境(primary care)和急診室，使用量表常規篩檢 自殺風險可以有效防治自殺；(5) 鋰鹽(Lithium)曾經被證明可以降低雙極症(bipolar disorder)病患的自殺風 險。",
+    "options": {
+      "A": "(1)+(2)+(3)",
+      "B": "(2)+(3)+(4)",
+      "C": "(1)+(4)+(5)",
+      "D": "(3)+(4)+(5)",
+      "E": "(1)+(2)+(5)"
+    },
+    "answer": "E",
+    "explanation": "本題考自殺防治（Suicide Prevention）的實證知識，需辨別各陳述的正確性。<br>陳述（1）正確：診斷罹患癌症後一周內確實有特別高的自殺風險，特別是在剛接受癌症診斷的衝擊期，這是已有研究支持的臨床發現<br>陳述（2）正確：建立並維持治療關係（Therapeutic Alliance）是自殺防治的重要保護因子，良好的醫病信任關係可降低病人的自殺風險<br>陳述（3）錯誤：限制致命工具的可得性（Means Restriction，如管制槍枝、停止販售劇毒農藥）是目前自殺防治中實證效果最強的公共衛生干預措施之一；多個研究顯示，限制特定致命工具可顯著降低該方式的自殺死亡率；「對防治自殺沒有幫助」是錯誤的<br>陳述（4）錯誤：目前缺乏強力實證支持在一般醫學情境（Primary Care）和急診室常規使用量表篩檢自殺風險可以有效防治自殺；常規量表篩查的假陽性率高，且後續介入是否能改善預後的證據仍不充分；USPSTF及多個指引對此的建議也存在爭議<br>陳述（5）正確：鋰鹽（Lithium）在雙極症（Bipolar Disorder）病人中已有臨床試驗及系統性回顧證實可降低自殺及自殺嘗試的風險，是目前有最強實證支持抗自殺效果的藥物",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10991"
+  },
+  {
+    "id": 109193,
+    "question": "193. 下列抗憂鬱藥物與副作用的配對，哪ㄧ組是不常見的？",
+    "options": {
+      "A": "選擇性血清素抑制劑(Selective Serotonin Reuptake Inhbitor: SSRI)：腸胃不適(nausea and other GI effects )",
+      "B": "三環抗憂鬱藥(Tricyclic antidepressants: TCA):：口乾便秘(dry mouth and constipation)",
+      "C": "選擇性血清素抑制劑(Selective Serotonin Reuptake Inhibitor: SSRI)：頭痛(headache)",
+      "D": "選擇性新腎上腺素與血清素再吸收抑制劑(Selective Norepinephrine/Serotonin Reuptake Inhibitors: SNRI): 陰莖異常勃起(priapism)",
+      "E": "三環抗憂鬱藥(Tricyclic antidepressants: TCA)：體重上升(weight gain)"
+    },
+    "answer": "D",
+    "explanation": "本題考各類抗憂鬱藥物的特徵性副作用配對，需找出「不常見」的配對。<br>(A) 正確（常見），SSRI的最常見初期副作用為胃腸道不適（噁心、腹瀉），通常在治療開始後1至2週最明顯<br>(B) 正確（常見），三環抗憂鬱藥（TCA）因抗膽鹼（Anticholinergic）效果，口乾（Dry Mouth）及便秘（Constipation）是最典型且常見的副作用<br>(C) 正確（常見），SSRI引起的頭痛是已知的常見副作用，特別是在治療初期<br>(D) 正確（此項為不常見的配對），陰莖異常勃起（Priapism，持續性勃起）最常與Trazodone（一種SARI，血清素拮抗及再攝取抑制劑）相關；而SNRI（如Venlafaxine、Duloxetine）引起的性功能副作用主要為性慾減退（Decreased Libido）及性高潮困難（Anorgasmia），而非陰莖異常勃起；Priapism是Trazodone的特徵性副作用，不是SNRI的典型副作用，此配對不常見<br>(E) 正確（常見），TCA因抗組織胺（Antihistaminergic）效果及促進食慾，體重增加是常見且明顯的副作用",
+    "tags": [
+      "109",
+      "精神科"
+    ],
+    "group_id": "group_10992"
+  },
+  {
+    "id": 109194,
+    "question": "194. 一位36歲女性出現如圖之劇癢皮膚病變，病灶往往在2-4小時候消失，但會反反覆覆發作，達4年之久，使 她常常無法入眠，請問最可能的診斷為何？",
+    "options": {
+      "A": "異位性皮膚炎 (atopic dermatitis)",
+      "B": "尋常性魚鱗癬 (ichthyosis vulgaris)",
+      "C": "慢性蕁麻疹 (Chronic urticaria)",
+      "D": "疥瘡 (Scabies)",
+      "E": "慢性濕疹 (Chronic eczema)"
+    },
+    "answer": "C",
+    "explanation": "本題考蕁麻疹的診斷特徵。慢性蕁麻疹的定義為蕁麻疹病灶反覆發作超過6週，是以瘙癢性風疹塊（Wheals/Hives）為特徵的皮膚病，單一病灶存在時間通常不超過24小時（多為數分鐘至數小時後消退）。<br>(A) 錯誤，異位性皮膚炎（Atopic Dermatitis，AD）的典型特徵為慢性反覆性濕疹性皮損（如苔蘚化、滲出），病灶持續存在且不會數小時消退；AD通常有個人或家族過敏性疾病史（氣喘、過敏性鼻炎）<br>(B) 錯誤，尋常性魚鱗癬（Ichthyosis Vulgaris）表現為乾燥、魚鱗狀皮膚，是遺傳性角質化異常，病灶不會自行消退<br>(C) 正確，慢性蕁麻疹（Chronic Urticaria，CU）的診斷標準為每週發作至少兩次、持續超過6週的蕁麻疹；病灶特徵為：劇烈瘙癢的風疹塊（Wheals）、在數分鐘至24小時內消退（通常2至4小時）、但在其他部位不斷復發；本病人病灶2至4小時後消失但反覆發作4年，完全符合CU的典型表現；CU嚴重影響病人睡眠及生活品質<br>(D) 錯誤，疥瘡（Scabies）由人疥蟎（Sarcoptes scabiei）寄生於皮膚引起，病灶為持續性隧道型皮疹（Burrows），好發於指縫、手腕及腹部，病灶不會數小時內消退<br>(E) 錯誤，慢性濕疹（Chronic Eczema）的病灶為持續性、有苔蘚化（Lichenification）的濕疹表現，不會反覆消退後重新出現在不同部位",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "images": [
+          "./exam/image/109-194.jpg"
+    ],
+    "group_id": "group_10993"
+  },
+  {
+    "id": 109195,
+    "question": "195. 承上，請問目前最建議的首選治療方式為何？",
+    "options": {
+      "A": "口服抗組織胺",
+      "B": "口服類固醇",
+      "C": "局部類固醇",
+      "D": "免疫抑制劑 (如環孢靈cyclosporine)",
+      "E": "局部抗組織胺"
+    },
+    "answer": "A",
+    "explanation": "本題考慢性蕁麻疹（Chronic Urticaria，CU）的第一線治療。依EAACI（歐洲過敏及臨床免疫學會）及多國皮膚科指引，CU的治療依反應分四個步驟。<br>(A) 正確，口服第二代H1抗組織胺（Second-Generation H1 Antihistamines，如Cetirizine、Loratadine、Fexofenadine）是慢性蕁麻疹的第一線首選治療，因其療效確切、安全性高且鎮靜作用少；若標準劑量效果不足，可增加至四倍劑量再評估療效<br>(B) 錯誤，口服類固醇（Oral Corticosteroids）可用於急性蕁麻疹嚴重發作的短期控制（不超過10天），但不建議長期使用於慢性蕁麻疹（因副作用多），不是首選治療<br>(C) 錯誤，局部類固醇（Topical Corticosteroids）對蕁麻疹的治療效果非常有限，蕁麻疹的病理位置在真皮深層，外用類固醇難以達到足夠濃度<br>(D) 錯誤，免疫抑制劑（如Cyclosporine）是慢性蕁麻疹第三至四線的替代治療，用於對高劑量抗組織胺及Omalizumab均反應不足的頑固性CU病人<br>(E) 錯誤，局部抗組織胺的系統性吸收不足，對蕁麻疹的治療效果差，不是有效的治療選擇",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "group_id": "group_10994"
+  },
+  {
+    "id": 109196,
+    "question": "196. 臺灣人最常見的皮膚黑色素細胞癌 (Cutaneous melanoma) 是哪一型？",
+    "options": {
+      "A": "結節型黑色素細胞癌 (nodular melanoma)",
+      "B": "肢端黑痣型黑色素細胞癌 (acral lentiginous melanoma)",
+      "C": "表淺擴散型黑色素細胞癌 (superficial spreading melanoma)",
+      "D": "惡性黑痣型黑色素細胞癌 (lentigo maligna melanoma)",
+      "E": "黏膜型黑色素細胞癌 (mucousal melanoma)"
+    },
+    "answer": "B",
+    "explanation": "本題考台灣及亞洲族群皮膚黑色素瘤（Cutaneous Melanoma）的流行病學特徵。黑色素瘤的亞型在不同族群之間有顯著差異：白種人以表淺擴散型為最常見，而亞洲族群（包括台灣人及東亞人）則有不同的分布。<br>(A) 錯誤，結節型黑色素細胞癌（Nodular Melanoma）在白種人中約佔15至30%，是較罕見且侵襲性強的亞型，不是台灣人最常見的類型<br>(B) 正確，肢端黑痣型黑色素細胞癌（Acral Lentiginous Melanoma，ALM）是台灣及東亞族群最常見的黑色素瘤亞型（約佔台灣黑色素瘤的40至60%），好發於手掌、腳掌及指甲下方（Subungual）；在白種人中ALM僅佔約5%，但在亞洲人、非裔及西班牙裔中比例最高<br>(C) 錯誤，表淺擴散型（Superficial Spreading Melanoma，SSM）是白種人最常見的類型（約佔70%），但在台灣及亞洲族群中並非最常見<br>(D) 錯誤，惡性黑痣型（Lentigo Maligna Melanoma，LMM）好發於老年人長期日曬的皮膚（如臉部），在台灣並非最常見類型<br>(E) 錯誤，黏膜型黑色素瘤（Mucosal Melanoma）是罕見的黑色素瘤亞型，雖然在亞洲族群中比例相對較高，但仍低於ALM",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "group_id": "group_10995"
+  },
+  {
+    "id": 109197,
+    "question": "197. 下列有關判斷是否為皮膚黑色素細胞癌 (Cutaneous melanoma) 的ABCDE口訣，哪些要考慮惡性？(1) A:對稱 (Asymmetry)，病灶本身左右對稱的時候； (2) B邊緣 (Border)，病灶邊緣規則的時候； (3) C顏色 (Color)，病灶色澤均勻的時候； (4) D直徑 (Diameter) 大於6 mm的時候； (5) E演變 (Evolving)，病灶大 小、形狀、顏色有變化，或是隆起、出血時",
+    "options": {
+      "A": "(1)+(2)+(3)",
+      "B": "(2)+(3)+(4)",
+      "C": "(2)+(3)",
+      "D": "(4)+(5)",
+      "E": "(2)+(5)"
+    },
+    "answer": "D",
+    "explanation": "本題考皮膚黑色素瘤（Cutaneous Melanoma）ABCDE口訣中「應考慮惡性」的特徵，需注意各口訣中「哪些特徵代表惡性」。<br>(1) 錯誤（A：對稱性 Asymmetry），應考慮惡性的是「不對稱」（Asymmetry），而非「對稱」；題幹描述「病灶左右對稱時」考慮惡性，此描述相反<br>(2) 錯誤（B：邊緣 Border），應考慮惡性的是「邊緣不規則」（Irregular Border），而非「邊緣規則」；邊緣規則是良性色素痣的特徵<br>(3) 錯誤（C：顏色 Color），應考慮惡性的是「顏色不均勻」（Uneven Color，有多種顏色如棕、黑、紅、白、藍），而非「色澤均勻」；色澤均勻是良性的表現<br>(4) 正確（D：直徑 Diameter），直徑大於6 mm確實是應考慮惡性的特徵（雖然早期黑色素瘤可小於6 mm，但大於6 mm是重要警示），此描述正確<br>(5) 正確（E：演變 Evolving），病灶大小、形狀、顏色有變化，或出現隆起、出血等演變，是強烈懷疑惡性的警示特徵，此描述正確<br>因此正確答案為(D)，即第4項及第5項（直徑大於6 mm及病灶有演變）是應考慮惡性的ABCDE特徵。",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "group_id": "group_10996"
+  },
+  {
+    "id": 109198,
+    "question": "198. 下列有關基底細胞癌 (Basal cell carcinoma) 的臨床表現，何者正確？(1) 表淺型 (superficial) 基底細胞癌 最惡性，好發於四肢末梢，臨床上像濕疹病灶； (2) 結節型 (nodular) 基底細胞癌臨床上常見為緩慢長大的 結節，帶有珍珠光澤，邊緣隆起，且有擴張血絲； (3) 色素型 (pigmented) 基底細胞癌類似黑色素細胞 癌，極易轉移； (4) 硬皮型 (morpheaform) 基底細胞癌，臨床表現為單一、扁平或萎縮像疤痕般的板塊病 灶，具侵襲性",
+    "options": {
+      "A": "(1)+(3)",
+      "B": "(2)+(4)",
+      "C": "(1)+(4)",
+      "D": "(2)+(3)",
+      "E": "(3)+(4)"
+    },
+    "answer": "B",
+    "explanation": "本題考基底細胞癌（Basal Cell Carcinoma，BCC）各亞型的臨床特徵，需辨別正確的描述。<br>(1) 錯誤，表淺型（Superficial BCC）並非最惡性的BCC；表淺型BCC是侵襲性最「低」的亞型，且好發於「軀幹及四肢」（而非四肢末梢），臨床上呈現粉紅至紅色斑片，邊緣略為隆起，類似濕疹；「最惡性」及「好發於四肢末梢」均是錯誤描述<br>(2) 正確，結節型（Nodular BCC）是最常見的BCC亞型，典型表現為緩慢生長的圓形或橢圓形結節，呈現「珍珠光澤」（Pearly/Translucent）、邊緣隆起及擴張的毛細血管（Telangiectasia），常見於臉部（特別是鼻子及臉頰），此描述完全正確<br>(3) 錯誤，色素型（Pigmented BCC）雖然外觀類似黑色素細胞癌，但BCC（包括色素型）「極少轉移」（轉移率小於0.1%），「極易轉移」的描述完全錯誤；BCC是局部侵犯性腫瘤，轉移極為罕見<br>(4) 正確，硬皮型（Morpheaform/Sclerosing BCC）是BCC中侵襲性最強的亞型，臨床表現為單一、扁平或略萎縮的硬化斑塊（Scar-Like Plaque），邊界不清，臨床上容易低估腫瘤實際範圍，切除邊緣陽性率高，此描述正確",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "group_id": "group_10997"
+  },
+  {
+    "id": 109199,
+    "question": "199. 一位56歲男性出現如圖病灶，請問最可能診斷，與最重要的臨床特徵為何？",
+    "options": {
+      "A": "紅斑性狼瘡 (lupus erythematosus)；凍瘡型紅斑性狼瘡 (chilblain lupus erythematosus) 病灶",
+      "B": "皮肌炎 (dermatomyositis)；Gottron氏徵候 (Gottron's sign)",
+      "C": "類風溼性關節炎 (rheumatoid arthritis)；類風濕性結節 (rheumatoid nodules)",
+      "D": "全身性硬皮症 (systemic scleroderma)；手指硬化 (sclerodactyly)、手指潰瘍 (digital ulcerations)",
+      "E": "感染性心內膜炎 (infective endocarditis)；Janeway lesions"
+    },
+    "answer": "D",
+    "explanation": "本題考全身性硬化症（Systemic Sclerosis，SSc，又稱硬皮症）的典型皮膚表現，特別是手指受侵犯的特徵。<br>(A) 錯誤，凍瘡型紅斑性狼瘡（Chilblain Lupus）表現為暴露於寒冷後在手指、足趾、耳朵等部位出現紫紅色結節及斑塊，與本案例的病灶描述不符<br>(B) 錯誤，皮肌炎（Dermatomyositis）的Gottron氏徵候（Gottron's Sign）是指關節背側的紫紅色扁平丘疹或斑塊（特別是掌指關節及近端指間關節的背面），雖然也在手指，但形態與硬皮症的手指硬化不同<br>(C) 錯誤，類風濕性結節（Rheumatoid Nodules）是皮下結節，好發於鷹嘴突及指關節骨突處，觸感硬實，並非以手指皮膚硬化及潰瘍為主要表現<br>(D) 正確，全身性硬皮症（Systemic Sclerosis）手指受侵犯的典型特徵包括：手指硬化（Sclerodactyly，手指皮膚增厚硬化如蠟狀）、手指潰瘍（Digital Ulcerations，因血管受累及雷諾氏現象造成缺血性潰瘍）及手指末端吸收（Fingertip Resorption）；這些表現合稱為SSc手部的標誌性改變<br>(E) 錯誤，Janeway Lesions是感染性心內膜炎（Infective Endocarditis）的皮膚表現，為手掌及腳掌的無痛性紅色出血性小結節（Hemorrhagic Papules），不是手指硬化及潰瘍的表現",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "images": [
+          "./exam/image/109-199.jpg"
+    ],
+    "group_id": "group_10998"
+  },
+  {
+    "id": 109200,
+    "question": "200. 一位26歲男性出現如圖病灶，請問最可能診斷為何？",
+    "options": {
+      "A": "圓盤型紅斑性狼瘡 (discoid lupus erythematosus)",
+      "B": "皮肌炎 (dermatomyositis)",
+      "C": "深部真菌感染 (deep fungal infection)",
+      "D": "硬皮症 (scleroderma)",
+      "E": "萎縮性疤痕 (atrophic scar)"
+    },
+    "answer": "A",
+    "explanation": "本題考圓盤型紅斑性狼瘡（Discoid Lupus Erythematosus，DLE）的臨床特徵識別，需依據圖示的皮膚病灶進行鑑別診斷。<br>(A) 正確，DLE是最常見的慢性皮膚型紅斑性狼瘡（Chronic Cutaneous Lupus Erythematosus，CCLE），典型病灶特徵為：境界清楚的圓形至橢圓形（圓盤狀）紅斑，表面有黏著性鱗屑及毛囊栓塞（Follicular Plugging），病灶中心可見色素減退（Hypopigmentation）及萎縮（Atrophy），邊緣有色素沉著（Hyperpigmentation）；好發於面部（特別是臉頰及鼻子的蝶形分布）、頭皮及耳廓，頭皮受侵犯可造成永久性瘢痕性禿髮（Cicatricial Alopecia）；好發於中青年女性，但也可見於年輕男性<br>(B) 錯誤，皮肌炎（Dermatomyositis）的典型皮膚表現為：眼瞼周圍的紫紅色水腫（Heliotrope Rash）及Gottron's Papules（指關節背側丘疹），不是圓盤狀萎縮性病灶<br>(C) 錯誤，深部真菌感染（Deep Fungal Infection，如孢子絲菌病 Sporotrichosis 或著色黴菌病 Chromoblastomycosis）可呈現疣狀、結節性或潰瘍性病灶，通常有接觸史，形態與DLE不同<br>(D) 錯誤，硬皮症（Scleroderma）的皮膚病灶為硬化增厚的斑塊或瀰漫性皮膚硬化，不呈現圓盤狀伴萎縮的紅斑病灶<br>(E) 錯誤，萎縮性疤痕（Atrophic Scar）通常有明確的外傷或手術史，沒有活動性紅斑及鱗屑，邊界形態也與DLE不同",
+    "tags": [
+      "109",
+      "皮膚科"
+    ],
+    "images": [
+          "./exam/image/109-200.jpg"
+    ],
+    "group_id": "group_10999"
   }
 ]
