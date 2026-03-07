@@ -69,6 +69,11 @@
       "111",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/111-4-1.jpg",
+          "./exam/image/112-4-2.jpg",
+          "./exam/image/111-4-3.jpg"
+    ],
     "group_id": "group_10483"
   },
   {
@@ -104,6 +109,12 @@
     "tags": [
       "111",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/111-6-1.jpg",
+          "./exam/image/112-6-2.jpg",
+          "./exam/image/111-6-3.jpg",
+          "./exam/image/111-6-4.jpg"
     ],
     "group_id": "group_10485"
   },
@@ -158,6 +169,14 @@
     "tags": [
       "111",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/111-9-1.jpg",
+          "./exam/image/112-9-2.jpg",
+          "./exam/image/111-9-3.jpg",
+          "./exam/image/111-9-4.jpg",
+          "./exam/image/111-9-5.jpg",
+          "./exam/image/111-9-6.jpg"
     ],
     "group_id": "group_10488"
   },
@@ -573,6 +592,9 @@
       "111",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/111-32.jpg"
+    ],
     "group_id": "group_10511"
   },
   {
@@ -735,6 +757,10 @@
       "111",
       "消化科"
     ],
+    "images": [
+          "./exam/image/111-41-1.jpg",
+          "./exam/image/111-41-2.jpg"
+    ],
     "group_id": "group_10520"
   },
   {
@@ -825,6 +851,10 @@
       "111",
       "消化科"
     ],
+    "images": [
+          "./exam/image/111-46-1.jpg",
+          "./exam/image/111-46-2.jpg"
+    ],
     "group_id": "group_10525"
   },
   {
@@ -879,6 +909,12 @@
       "111",
       "消化科"
     ],
+    "images": [
+          "./exam/image/111-49-1.jpg",
+          "./exam/image/111-49-2.jpg",
+          "./exam/image/111-49-3.jpg",
+          "./exam/image/111-49-4.jpg"
+    ],
     "group_id": "group_10528"
   },
   {
@@ -896,6 +932,9 @@
     "tags": [
       "111",
       "消化科"
+    ],
+    "images": [
+          "./exam/image/111-50.jpg"
     ],
     "group_id": "group_10529"
   },
@@ -1274,6 +1313,9 @@
     "tags": [
       "111",
       "腎臟科"
+    ],
+    "images": [
+          "./exam/image/111-71.jpg"
     ],
     "group_id": "group_10550"
   },
@@ -2805,6 +2847,9 @@
       "111",
       "皮膚科"
     ],
+    "images": [
+          "./exam/image/111-156.jpg"
+    ],
     "group_id": "group_10635"
   },
   {
@@ -2822,6 +2867,9 @@
     "tags": [
       "111",
       "皮膚科"
+    ],
+    "images": [
+          "./exam/image/111-157.jpg"
     ],
     "group_id": "group_10636"
   },
@@ -2841,6 +2889,10 @@
       "111",
       "皮膚科"
     ],
+    "images": [
+          "./exam/image/111-158-1.jpg",
+          "./exam/image/111-158-2.jpg"
+    ],
     "group_id": "group_10637"
   },
   {
@@ -2859,6 +2911,9 @@
       "111",
       "皮膚科"
     ],
+    "images": [
+          "./exam/image/111-159.jpg"
+    ],
     "group_id": "group_10638"
   },
   {
@@ -2876,6 +2931,10 @@
     "tags": [
       "111",
       "皮膚科"
+    ],
+    "images": [
+          "./exam/image/111-160-1.jpg",
+          "./exam/image/111-160-2.jpg"
     ],
     "group_id": "group_10639"
   }
