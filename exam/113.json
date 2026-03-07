@@ -15,6 +15,10 @@
       "113",
       "心臟科"
     ],
+    "images": [
+          "./exam/image/113-1-1.jpg",
+          "./exam/image/113-1-2.jpg"
+    ],
     "group_id": "group_10160"
   },
   {
@@ -140,6 +144,10 @@
     "tags": [
       "113",
       "心臟科"
+    ],
+    "images": [
+          "./exam/image/113-8-1.jpg",
+          "./exam/image/113-8-2.jpg"
     ],
     "group_id": "group_10167"
   },
@@ -375,6 +383,9 @@
       "113",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/113-21.jpg"
+    ],
     "group_id": "group_10180"
   },
   {
@@ -483,6 +494,9 @@
       "113",
       "胸腔科"
     ],
+    "images": [
+          "./exam/image/113-27.jpg"
+    ],
     "group_id": "group_10186"
   },
   {
@@ -572,6 +586,9 @@
     "tags": [
       "113",
       "胸腔科"
+    ],
+    "images": [
+          "./exam/image/113-32.jpg"
     ],
     "group_id": "group_10191"
   },
@@ -752,6 +769,9 @@
     "tags": [
       "113",
       "消化科"
+    ],
+    "images": [
+          "./exam/image/113-42.jpg"
     ],
     "group_id": "group_10201"
   },
@@ -1472,6 +1492,10 @@
     "tags": [
       "113",
       "感染科"
+    ],
+    "images": [
+          "./exam/image/113-82-1.jpg",
+          "./exam/image/113-82-2.jpg"
     ],
     "group_id": "group_10241"
   },
@@ -2822,6 +2846,10 @@
     "tags": [
       "113",
       "皮膚科"
+    ],
+    "images": [
+          "./exam/image/113-157-1.jpg",
+          "./exam/image/113-157-2.jpg"
     ],
     "group_id": "group_10316"
   },
